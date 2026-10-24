@@ -49,9 +49,9 @@ Elements borrowed from B and C: deep (#031C26) bands for the video and gallery, 
 
 | # | Section | Objective | Desktop | Mobile | REQ |
 |---|---|---|---|---|---|
-| 1 | Header | Navigate, language, join | Floating white pill bar as in the Home design: logo (always visible), 4 anchors, language menu, “Join the waitlist” with circled arrow | Logo, language, menu card | 001, 017 |
+| 1 | Header | Navigate, language, join | White pill bar at the top of the page as in the Home design (scrolls away with the page): logo, 4 anchors, language menu, “Join the waitlist” with circled arrow | Logo, language, menu card | 001, 017 |
 | 2 | Hero | Brand + concept + two paths | Modelled on Figma *01 Home*: launch badge with the Loqelo mark, tagline H1 with mint underline (+ local translation), lead, the “What do you need?” box (typed request, Speak/city pills, “Join the waitlist” = customer path, recognised-service chips), provider link “Join as a provider”, trust row; right: tall photo with Home/Garden/Office switch, request-detail card and “Offers from local pros” card | Same order as the Figma mobile home (M1); photo hidden | 001, 002, 006, 007 |
-| 3 | Video | Concept in 82 s | Plays muted automatically when half visible, pauses when scrolled away, “Turn sound on” restarts with sound; 1080p/720p MP4 or WebM | Same, 720p | 003 |
+| 3 | Video | Concept in 82 s | Plays automatically when half visible: with sound if the browser allows (any earlier click/tap), otherwise muted until the first click or “Turn sound on”; pauses when scrolled away and resumes from the same point; 1080p/720p MP4 or WebM | Same, 720p | 003 |
 | 4 | What is Loqelo | Offer and scope | Statement + 3 place cards + 8 planned categories | Swipe carousel | 002 |
 | 5 | How it works | 4-step journey | Sticky stage with cropped screens following scroll; progress rail | Each step followed by its screen | 004, 005 |
 | 6 | Audiences | Whom it serves | Customer (mint) and provider (deep) cards with benefits and CTAs | Stacked | 002, 007 |
@@ -73,7 +73,7 @@ Elements borrowed from B and C: deep (#031C26) bands for the video and gallery, 
 |---|---|---|---|
 | Hero entry | load → rise (opacity + 14 px) | 0.7 s, staggered 80–320 ms | none |
 | Composer demo | auto → typing 38 ms/char, highlight on completion, chips pop, crossfade photo + detail card | ≈5.5 s per scenario; holds while hovered/focused; stops after two rounds or after a manual place choice (no pause button, by client request) | Static full sentence + chips, no autoplay |
-| Promo video | ≥50 % visible → muted play; <50 % → pause | — | No autoplay; click-to-play poster |
+| Promo video | ≥50 % visible → play (sound when allowed); <50 % → pause, resume on return | — | No autoplay; click-to-play poster |
 | Section reveals | IntersectionObserver → fade/translate 18 px | 0.8 s | Content always visible |
 | How-it-works | active step → stage crossfade, rail fill | 0.5–0.7 s | Instant |
 | Buttons/cards | hover/press → colour, 1 px press, lift | 0.2–0.5 s | Minimal |

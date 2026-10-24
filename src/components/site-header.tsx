@@ -9,9 +9,8 @@ import { Icon } from './icon';
 
 type Props = { locale: Locale; t: Dictionary['nav']; home?: boolean };
 
-/** Floating white navigation bar, as in the Loqelo Home design. */
+/** White navigation bar at the top of the page, as in the Loqelo Home design (scrolls away with the page). */
 export function SiteHeader({ locale, t, home = false }: Props) {
-  const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const menuButton = useRef<HTMLButtonElement>(null);
   const base = home ? '' : `/${locale}`;
@@ -22,13 +21,6 @@ export function SiteHeader({ locale, t, home = false }: Props) {
     { href: `${base}#for-providers`, label: t.providers },
     { href: `${base}#launch`, label: t.launch },
   ];
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 8);
-    onScroll();
-    window.addEventListener('scroll', onScroll, { passive: true });
-    return () => window.removeEventListener('scroll', onScroll);
-  }, []);
 
   useEffect(() => {
     if (!menuOpen) return;
@@ -43,10 +35,10 @@ export function SiteHeader({ locale, t, home = false }: Props) {
   }, [menuOpen]);
 
   return (
-    <header className="sticky top-0 z-50 px-3 pt-3 sm:px-5 sm:pt-4">
+    <header className="relative z-50 px-3 pt-3 sm:px-5 sm:pt-4">
       <div
         className={`mx-auto flex h-16 max-w-[1360px] items-center gap-2 rounded-full bg-white/95 pl-4 pr-2 ring-1 ring-line/80 backdrop-blur-xl transition-shadow duration-300 sm:h-[76px] sm:gap-3 sm:pl-7 sm:pr-3 ${
-          scrolled || menuOpen ? 'shadow-2' : 'shadow-1'
+          menuOpen ? 'shadow-2' : 'shadow-1'
         }`}
       >
         <a id="site-logo" href={home ? '#top' : `/${locale}`} aria-label={t.home} className="shrink-0 rounded-lg">

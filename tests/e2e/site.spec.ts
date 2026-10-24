@@ -85,7 +85,7 @@ test('platform preview tabs and lightbox work with keyboard', async ({ page }) =
   await expect(dialog).toBeHidden();
 });
 
-test('promo video starts muted when scrolled into view and pauses when scrolled away', async ({ page }) => {
+test('promo video plays with sound in its section, pauses when scrolled away and resumes on return', async ({ page }) => {
   await skipConsentBanner(page);
   const videoRequests: string[] = [];
   page.on('request', (r) => {
@@ -95,18 +95,25 @@ test('promo video starts muted when scrolled into view and pauses when scrolled 
   await page.waitForTimeout(800);
   expect(videoRequests, 'nothing is downloaded at the top of the page').toHaveLength(0);
 
+  // Any earlier click on the page lets the browser start the video with sound.
+  await page.getByText('Launching February 2027').first().click();
+
   const video = page.locator('#video video');
   await video.scrollIntoViewIfNeeded();
   await expect.poll(() => video.evaluate((v: HTMLVideoElement) => v.currentTime), { timeout: 15_000 }).toBeGreaterThan(0.5);
-  expect(await video.evaluate((v: HTMLVideoElement) => v.muted)).toBe(true);
-  expect(videoRequests.length).toBeGreaterThan(0);
-
-  await page.getByRole('button', { name: 'Turn sound on' }).click();
   expect(await video.evaluate((v: HTMLVideoElement) => v.muted)).toBe(false);
   await expect(page.getByRole('button', { name: 'Turn sound on' })).toHaveCount(0);
+  expect(videoRequests.length).toBeGreaterThan(0);
 
   await page.evaluate(() => window.scrollTo(0, 0));
   await expect.poll(() => video.evaluate((v: HTMLVideoElement) => v.paused)).toBe(true);
+  const pausedAt = await video.evaluate((v: HTMLVideoElement) => v.currentTime);
+
+  await video.scrollIntoViewIfNeeded();
+  await expect.poll(() => video.evaluate((v: HTMLVideoElement) => v.paused)).toBe(false);
+  await expect.poll(() => video.evaluate((v: HTMLVideoElement) => v.currentTime), { timeout: 10_000 }).toBeGreaterThan(pausedAt + 0.3);
+  // Continued from where it stopped instead of starting over.
+  expect(await video.evaluate((v: HTMLVideoElement) => v.currentTime)).toBeGreaterThanOrEqual(pausedAt);
 });
 
 test.describe('analytics consent', () => {

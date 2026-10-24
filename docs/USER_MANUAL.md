@@ -153,7 +153,7 @@ Country → language rules are in `src/lib/i18n/detect.ts`. Adding a language me
 | `waitlist_form_start` | First interaction with the form (per path) | audience |
 | `waitlist_form_error` | Validation or submission problem | audience, error_type |
 | `cta_click` | “I need / I offer services” and waitlist buttons | cta_location, audience |
-| `promo_video_play` / `_unmute` / `_progress` / `_complete` | Video started (autoplays muted when scrolled into view) / sound turned on / watched | percent |
+| `promo_video_play` / `_unmute` / `_progress` / `_complete` | Video started (plays by itself when its section is on screen) / sound turned on with the button / watched | percent |
 | `language_change` | Language switched manually | from_language, to_language |
 
 Privacy rules built into the site: GA loads **only after consent**. Advertising features and Google signals are off. Page addresses are sent **without query strings**. Event parameters come from a fixed allow-list, so **no email addresses or form answers** can be sent. Countries in GA come from GA's own IP-based location, not from the form. Visitors can change their choice at any time under **Cookie settings** in the footer.

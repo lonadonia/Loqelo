@@ -29,20 +29,58 @@ function pickSource(video: HTMLVideoElement) {
 }
 
 /**
- * Promo video. It starts muted when scrolled into view (browsers only allow
- * muted autoplay) and pauses when scrolled away. Nothing is downloaded until
- * the visitor gets close. With reduced motion or data saving it waits for a click.
+ * Promo video that plays by itself while its section is on screen, pauses when
+ * the visitor scrolls away and continues where it stopped when they come back.
+ *
+ * It starts with sound whenever the browser allows it (browsers require the
+ * visitor to have clicked or tapped the page at least once). Otherwise it starts
+ * muted and the sound comes on with the visitor's first click or tap anywhere,
+ * or with the "Turn sound on" button. Nothing is downloaded until the visitor is
+ * close; with reduced motion or data saving it waits for a click instead.
  */
 export function VideoPlayer({ playLabel, videoLabel, duration, unmuteLabel }: Props) {
   const autoplay = useSyncExternalStore(subscribeMotion, canAutoplay, () => true);
   const wrapper = useRef<HTMLDivElement>(null);
   const video = useRef<HTMLVideoElement>(null);
-  const visible = useRef(false);
+  const inView = useRef(false);
+  const selfPausing = useRef(false);
+  const userPaused = useRef(false);
+  const userMuted = useRef(false);
+  const expectedMuted = useRef(false);
   const reported = useRef(new Set<number>());
   const played = useRef(false);
   const [src, setSrc] = useState<string | null>(null);
-  const [muted, setMuted] = useState(true);
+  const [muted, setMuted] = useState(false);
   const [manualStarted, setManualStarted] = useState(false);
+
+  /** Changes made by this component (not by the visitor through the video controls). */
+  const setVideoMuted = (v: HTMLVideoElement, value: boolean) => {
+    expectedMuted.current = value;
+    v.muted = value;
+    setMuted(value);
+  };
+
+  /** Play with sound if allowed, otherwise muted (sound follows on the next click). */
+  const playNow = () => {
+    const v = video.current;
+    if (!v || !v.currentSrc || userPaused.current) return;
+    if (v.ended) v.currentTime = 0;
+    if (!v.paused) return;
+    setVideoMuted(v, userMuted.current);
+    v.play().catch(() => {
+      setVideoMuted(v, true);
+      void v.play().catch(() => undefined);
+    });
+  };
+
+  const unmute = () => {
+    const v = video.current;
+    if (!v) return;
+    userMuted.current = false;
+    setVideoMuted(v, false);
+    if (v.paused && inView.current) void v.play().catch(() => undefined);
+    track('promo_video_unmute');
+  };
 
   useEffect(() => {
     if (!autoplay || !wrapper.current) return;
@@ -57,41 +95,54 @@ export function VideoPlayer({ playLabel, videoLabel, duration, unmuteLabel }: Pr
       },
       { rootMargin: '200px 0px' },
     );
-    // Play while at least half of it is visible, pause otherwise.
+    // Play while at least half of the video is visible; pause (keeping the position) otherwise.
     const view = new IntersectionObserver(
       ([entry]) => {
-        visible.current = entry.intersectionRatio >= 0.5;
         const v = video.current;
+        const visible = entry.intersectionRatio >= 0.5;
+        if (visible === inView.current) return;
+        inView.current = visible;
         if (!v) return;
-        if (visible.current) void v.play().catch(() => undefined);
-        else if (!v.paused) v.pause();
+        if (visible) {
+          playNow();
+        } else {
+          userPaused.current = false;
+          if (!v.paused) {
+            selfPausing.current = true;
+            v.pause();
+          }
+        }
       },
       { threshold: [0, 0.5, 0.75] },
     );
     near.observe(el);
     view.observe(el);
+
+    // The first click/tap/key press anywhere unlocks sound in every browser.
+    const onFirstInteraction = (event: Event) => {
+      const v = video.current;
+      if (!v || userMuted.current || (event.target instanceof Node && v.contains(event.target))) return;
+      if (v.muted && inView.current) {
+        setVideoMuted(v, false);
+        if (v.paused) void v.play().catch(() => undefined);
+      }
+    };
+    window.addEventListener('pointerdown', onFirstInteraction, { capture: true });
+    window.addEventListener('keydown', onFirstInteraction, { capture: true });
     return () => {
       near.disconnect();
       view.disconnect();
+      window.removeEventListener('pointerdown', onFirstInteraction, { capture: true });
+      window.removeEventListener('keydown', onFirstInteraction, { capture: true });
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- playNow and setVideoMuted only use refs and a state setter
   }, [autoplay]);
 
   const startManually = () => {
     if (!video.current) return;
     setSrc(pickSource(video.current));
-    setMuted(false);
     setManualStarted(true);
-    visible.current = true;
-  };
-
-  const unmute = () => {
-    const v = video.current;
-    if (!v) return;
-    v.currentTime = 0;
-    v.muted = false;
-    setMuted(false);
-    void v.play().catch(() => undefined);
-    track('promo_video_unmute');
+    inView.current = true;
   };
 
   const onTimeUpdate = () => {
@@ -115,13 +166,12 @@ export function VideoPlayer({ playLabel, videoLabel, duration, unmuteLabel }: Pr
         className="h-full w-full bg-black object-cover"
         src={src ?? undefined}
         poster={POSTER}
-        muted={muted}
         playsInline
         preload={src ? 'auto' : 'none'}
-        controls={!!src && (!muted || !autoplay)}
+        controls={!!src}
         aria-label={videoLabel}
-        onCanPlay={(e) => {
-          if (visible.current && e.currentTarget.paused && !e.currentTarget.ended) void e.currentTarget.play().catch(() => undefined);
+        onCanPlay={() => {
+          if (inView.current) playNow();
         }}
         onPlay={() => {
           if (!played.current) {
@@ -129,15 +179,29 @@ export function VideoPlayer({ playLabel, videoLabel, duration, unmuteLabel }: Pr
             track('promo_video_play');
           }
         }}
+        onPause={() => {
+          // A pause we did not cause comes from the visitor: respect it until they scroll away.
+          if (!selfPausing.current && !video.current?.ended) userPaused.current = true;
+          selfPausing.current = false;
+        }}
+        onVolumeChange={(e) => {
+          const v = e.currentTarget;
+          // A change we did not make comes from the video controls: remember the visitor's choice.
+          if (v.muted !== expectedMuted.current) {
+            userMuted.current = v.muted;
+            expectedMuted.current = v.muted;
+          }
+          setMuted(v.muted);
+        }}
         onTimeUpdate={onTimeUpdate}
         onEnded={() => track('promo_video_complete')}
       />
 
-      {autoplay && muted && (
+      {!!src && muted && (
         <button
           type="button"
           onClick={unmute}
-          className="absolute bottom-4 right-4 inline-flex h-11 items-center gap-2 rounded-full bg-white/95 px-4 font-display text-[15px] font-semibold text-ink shadow-2 backdrop-blur transition-transform hover:scale-[1.03] sm:bottom-6 sm:right-6"
+          className="absolute right-4 top-4 inline-flex h-11 items-center gap-2 rounded-full bg-white/95 px-4 font-display text-[15px] font-semibold text-ink shadow-2 backdrop-blur transition-transform hover:scale-[1.03] sm:right-6 sm:top-6"
         >
           <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
             <path d="M11 5 6 9H3v6h3l5 4V5z" />
