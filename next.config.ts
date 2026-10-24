@@ -39,6 +39,12 @@ const nextConfig: NextConfig = {
   async headers() {
     return [
       { source: '/:path*', headers: securityHeaders },
+      // Keep temporary *.vercel.app addresses out of search results; only loqelo.com should be indexed.
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: '(?<subdomain>.*)\\.vercel\\.app' }],
+        headers: [{ key: 'X-Robots-Tag', value: 'noindex, nofollow' }],
+      },
       {
         source: '/media/:file*',
         headers: [{ key: 'Cache-Control', value: 'public, max-age=31536000, immutable' }],
