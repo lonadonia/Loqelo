@@ -56,7 +56,7 @@ export function LanguageSwitcher({ locale, label, tone = 'light', align = 'right
         aria-controls={menuId}
         onClick={() => setOpen((v) => !v)}
         className={`inline-flex h-11 items-center gap-2 rounded-full px-3.5 font-display text-[15px] font-semibold transition-colors ${
-          dark ? 'text-white hover:bg-white/10' : 'text-ink hover:bg-white'
+          dark ? 'text-white hover:bg-white/10' : 'text-ink hover:bg-bg'
         }`}
       >
         <Icon name="globe" size={19} />

@@ -21,6 +21,7 @@ export type AnalyticsEvent =
   | 'waitlist_form_error'
   | 'cta_click'
   | 'promo_video_play'
+  | 'promo_video_unmute'
   | 'promo_video_progress'
   | 'promo_video_complete'
   | 'language_change';

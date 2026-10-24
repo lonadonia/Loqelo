@@ -55,7 +55,8 @@ test('suggests the browser language when location picked another one', async ({ 
 test('main content, tagline, launch date and both paths are present', async ({ page }) => {
   await skipConsentBanner(page);
   await page.goto('/en');
-  await expect(page.locator('#hero-logo')).toBeVisible();
+  await expect(page.locator('#site-logo img')).toBeVisible();
+  await expect(page.getByRole('button', { name: /Pause/ })).toHaveCount(0);
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('Everything your place needs.');
   await expect(page.getByText('Launching February 2027').first()).toBeVisible();
   await expect(page.getByRole('heading', { name: 'From one sentence to the right pro.' })).toBeVisible();
@@ -84,22 +85,28 @@ test('platform preview tabs and lightbox work with keyboard', async ({ page }) =
   await expect(dialog).toBeHidden();
 });
 
-test('promo video loads only on demand and plays', async ({ page }) => {
+test('promo video starts muted when scrolled into view and pauses when scrolled away', async ({ page }) => {
   await skipConsentBanner(page);
   const videoRequests: string[] = [];
   page.on('request', (r) => {
     if (r.url().includes('/media/loqelo-promo') && !r.url().includes('poster')) videoRequests.push(r.url());
   });
-  await page.goto('/en#video');
-  await page.waitForTimeout(500);
-  expect(videoRequests).toHaveLength(0);
-  await page.getByRole('button', { name: /Play the Loqelo video/ }).click();
-  const video = page.locator('video');
-  await expect(video).toBeVisible();
-  await expect
-    .poll(async () => video.evaluate((v: HTMLVideoElement) => v.currentTime), { timeout: 15_000 })
-    .toBeGreaterThan(0.5);
+  await page.goto('/en');
+  await page.waitForTimeout(800);
+  expect(videoRequests, 'nothing is downloaded at the top of the page').toHaveLength(0);
+
+  const video = page.locator('#video video');
+  await video.scrollIntoViewIfNeeded();
+  await expect.poll(() => video.evaluate((v: HTMLVideoElement) => v.currentTime), { timeout: 15_000 }).toBeGreaterThan(0.5);
+  expect(await video.evaluate((v: HTMLVideoElement) => v.muted)).toBe(true);
   expect(videoRequests.length).toBeGreaterThan(0);
+
+  await page.getByRole('button', { name: 'Turn sound on' }).click();
+  expect(await video.evaluate((v: HTMLVideoElement) => v.muted)).toBe(false);
+  await expect(page.getByRole('button', { name: 'Turn sound on' })).toHaveCount(0);
+
+  await page.evaluate(() => window.scrollTo(0, 0));
+  await expect.poll(() => video.evaluate((v: HTMLVideoElement) => v.paused)).toBe(true);
 });
 
 test.describe('analytics consent', () => {
@@ -147,7 +154,15 @@ test('reduced motion shows the complete demo without animation controls', async 
   await skipConsentBanner(page);
   await page.goto('/en');
   await expect(page.getByText('We found 2 services')).toBeVisible();
-  await expect(page.getByRole('button', { name: 'Pause the demo' })).toHaveCount(0);
+  await expect(page.getByRole('button', { name: /Pause/ })).toHaveCount(0);
+
+  // No autoplay: the video waits for a click.
+  const video = page.locator('#video video');
+  await page.locator('#video').scrollIntoViewIfNeeded();
+  await page.waitForTimeout(800);
+  expect(await video.evaluate((v: HTMLVideoElement) => v.paused && !v.currentSrc)).toBe(true);
+  await page.getByRole('button', { name: /Play the Loqelo video/ }).click();
+  await expect.poll(() => video.evaluate((v: HTMLVideoElement) => v.currentTime), { timeout: 15_000 }).toBeGreaterThan(0.5);
   await context.close();
 });
 

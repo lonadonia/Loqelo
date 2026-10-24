@@ -19,7 +19,7 @@ Test run: 24 Oct 2026, Node 22.22, Chromium (Playwright 1.63), production builds
 |---|---|---|---|---|
 | QA-01 | 001 | Logo + exact tagline in hero, all locales | e2e `main content…`; unit tagline test | VERIFIED_PASS |
 | QA-02 | 002 | Concept and audiences explained | Screenshots 1440/390 | VERIFIED_PASS |
-| QA-03 | 003 | Video loads nothing before click, then plays (WebM fallback in Chromium) | e2e `promo video…` | VERIFIED_PASS |
+| QA-03 | 003 | Video downloads nothing at the top of the page; autoplays muted when scrolled into view; “Turn sound on” unmutes; pauses when scrolled away; reduced motion → click-to-play (WebM fallback in Chromium) | e2e `promo video starts muted…` + reduced-motion test | VERIFIED_PASS |
 | QA-04 | 004 | Preview tabs, lightbox, arrow keys, Escape | e2e `platform preview…` | VERIFIED_PASS |
 | QA-05 | 005 | 4 journey steps present; sticky stage follows scroll | e2e + 1440 screenshot (step 3) | VERIFIED_PASS |
 | QA-06 | 006 | February 2027 in every locale; no day shown | unit; calendar tile | VERIFIED_PASS |

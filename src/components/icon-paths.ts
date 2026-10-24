@@ -50,6 +50,8 @@ export const iconPaths = {
   euro: "<path d=\"M17 6.8A6.5 6.5 0 1 0 17 17.2M4.5 10.5h8M4.5 13.5h8\"/>",
   award: "<circle cx=\"12\" cy=\"9.5\" r=\"5.5\"/><path d=\"M8.8 14l-1.3 6.5L12 18l4.5 2.5-1.3-6.5\"/>",
   activity: "<path d=\"M3.5 12h4l2.5-6 4 12 2.5-6h4\"/>",
+  grid: "<rect x=\"4\" y=\"4\" width=\"7\" height=\"7\" rx=\"1.5\"/><rect x=\"13\" y=\"4\" width=\"7\" height=\"7\" rx=\"1.5\"/><rect x=\"4\" y=\"13\" width=\"7\" height=\"7\" rx=\"1.5\"/><rect x=\"13\" y=\"13\" width=\"7\" height=\"7\" rx=\"1.5\"/>",
+  sort: "<path d=\"M7 5v14M3.8 8.2L7 5l3.2 3.2M17 19V5M13.8 15.8L17 19l3.2-3.2\"/>",
 } as const;
 
 export type IconName = keyof typeof iconPaths;

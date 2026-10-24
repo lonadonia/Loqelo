@@ -16,7 +16,7 @@ export function VideoSection({ t }: { t: Dictionary['video'] }) {
           <p className="mx-auto mt-4 max-w-xl text-lg text-white/75">{t.text}</p>
         </div>
         <div className="mx-auto mt-12 max-w-[1160px]" data-reveal>
-          <VideoPlayer playLabel={t.play} videoLabel={t.label} duration={t.duration} />
+          <VideoPlayer playLabel={t.play} videoLabel={t.label} duration={t.duration} unmuteLabel={t.unmute} />
         </div>
       </div>
     </section>

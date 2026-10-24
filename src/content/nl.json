@@ -35,46 +35,111 @@
     "ctaCustomerHint": "Inschrijven als klant",
     "ctaProvider": "Ik bied diensten aan",
     "ctaProviderHint": "Inschrijven als vakman",
-    "note": "Gratis · Alleen lanceringsnieuws · Altijd afmelden",
+    "trust": [
+      "Gratis inschrijven",
+      "Alleen lanceringsnieuws",
+      "Altijd afmelden"
+    ],
+    "providerPrompt": "Bied je diensten aan?",
     "demo": {
       "label": "Wat heb je nodig?",
       "anyLanguage": "In elke taal",
       "found": "{count} diensten herkend",
       "recognising": "Diensten herkennen…",
-      "cta": "Offertes ontvangen",
+      "cta": "Naar de wachtlijst",
       "preview": "Platformpreview",
-      "pause": "Demo pauzeren",
-      "play": "Demo afspelen",
-      "places": ["Huis", "Tuin", "Kantoor"],
+      "places": [
+        "Huis",
+        "Tuin",
+        "Kantoor"
+      ],
       "scenarios": [
         {
           "segments": [
-            { "text": "Ik wil " },
-            { "text": "mijn huis laten schoonmaken", "service": "Schoonmaak", "tone": "mint" },
-            { "text": " en " },
-            { "text": "de ramen laten wassen", "service": "Glazenwassen", "tone": "blue" },
-            { "text": "." }
-          ]
+            {
+              "text": "Ik wil "
+            },
+            {
+              "text": "mijn huis laten schoonmaken",
+              "service": "Schoonmaak",
+              "tone": "mint"
+            },
+            {
+              "text": " en "
+            },
+            {
+              "text": "de ramen laten wassen",
+              "service": "Glazenwassen",
+              "tone": "blue"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "city": "Amsterdam",
+          "detailLabel": "Glazenwassen",
+          "detail": "12 ramen, binnen en buiten"
         },
         {
           "segments": [
-            { "text": "Kan iemand deze week " },
-            { "text": "de heg snoeien", "service": "Heg snoeien", "tone": "mint" },
-            { "text": " en " },
-            { "text": "het gras maaien", "service": "Gazononderhoud", "tone": "amber" },
-            { "text": "?" }
-          ]
+            {
+              "text": "Kan iemand deze week "
+            },
+            {
+              "text": "de heg snoeien",
+              "service": "Heg snoeien",
+              "tone": "mint"
+            },
+            {
+              "text": " en "
+            },
+            {
+              "text": "het gras maaien",
+              "service": "Gazononderhoud",
+              "tone": "amber"
+            },
+            {
+              "text": "?"
+            }
+          ],
+          "city": "Amstelveen",
+          "detailLabel": "Heg snoeien",
+          "detail": "18 m heg, achtertuin"
         },
         {
           "segments": [
-            { "text": "Ons kantoor heeft " },
-            { "text": "nieuwe plafondlampen", "service": "Elektra", "tone": "blue" },
-            { "text": " en een " },
-            { "text": "grondige schoonmaak", "service": "Kantoorschoonmaak", "tone": "mint" },
-            { "text": " nodig." }
-          ]
+            {
+              "text": "Ons kantoor heeft "
+            },
+            {
+              "text": "nieuwe plafondlampen",
+              "service": "Elektra",
+              "tone": "blue"
+            },
+            {
+              "text": " en een "
+            },
+            {
+              "text": "grondige schoonmaak",
+              "service": "Kantoorschoonmaak",
+              "tone": "mint"
+            },
+            {
+              "text": " nodig."
+            }
+          ],
+          "city": "Utrecht",
+          "detailLabel": "Elektra",
+          "detail": "6 plafondlampen, open kantoor"
         }
-      ]
+      ],
+      "speak": "Inspreken",
+      "add": "Toevoegen"
+    },
+    "offersCard": {
+      "label": "Volgende stap",
+      "title": "Offertes van lokale vakmensen",
+      "meta": "Prijs · planning · beoordeling"
     }
   },
   "intro": {
@@ -82,12 +147,33 @@
     "title": "Eén plek voor al het werk dat jouw plek nodig heeft.",
     "body": "Van een lekkende kraan tot een nieuwe tuin: Loqelo brengt mensen die iets gedaan willen hebben samen met de lokale vakmensen die het doen. Eén eenvoudige aanvraag in plaats van eindeloos zoeken, bellen en vergelijken.",
     "places": [
-      { "key": "home", "title": "Huis", "text": "Schoonmaak, reparaties, installaties, renovatie en verhuizingen." },
-      { "key": "garden", "title": "Tuin", "text": "Gazon, heggen en bomen, beregening en onderhoud buiten." },
-      { "key": "office", "title": "Kantoor", "text": "Kantoorschoonmaak, onderhoud, elektra en inrichting." }
+      {
+        "key": "home",
+        "title": "Huis",
+        "text": "Schoonmaak, reparaties, installaties, renovatie en verhuizingen."
+      },
+      {
+        "key": "garden",
+        "title": "Tuin",
+        "text": "Gazon, heggen en bomen, beregening en onderhoud buiten."
+      },
+      {
+        "key": "office",
+        "title": "Kantoor",
+        "text": "Kantoorschoonmaak, onderhoud, elektra en inrichting."
+      }
     ],
     "moreLabel": "Geplande categorieën zijn onder meer",
-    "categories": ["Huis", "Tuin", "Bouw", "Installaties", "Huisdieren", "Voertuigen", "Persoonlijke diensten", "Verhuizing & transport"]
+    "categories": [
+      "Huis",
+      "Tuin",
+      "Bouw",
+      "Installaties",
+      "Huisdieren",
+      "Voertuigen",
+      "Persoonlijke diensten",
+      "Verhuizing & transport"
+    ]
   },
   "audiences": {
     "customers": {
@@ -150,13 +236,18 @@
     "text": "Een korte film over hoe Loqelo mensen verbindt met de juiste lokale vakmensen — voor huis, tuin en kantoor.",
     "play": "Speel de Loqelo-video af",
     "duration": "1:22",
-    "label": "Promotievideo van Loqelo"
+    "label": "Promotievideo van Loqelo",
+    "unmute": "Geluid aan"
   },
   "preview": {
     "eyebrow": "Platformpreview",
     "title": "Een eerste blik op het platform.",
     "lead": "Ontworpen voor beide kanten van de klus: eenvoudig voor klanten, efficiënt voor vakmensen. Dit zijn ontwerppreviews van het platform dat in februari 2027 lanceert.",
-    "tabs": { "customers": "Voor klanten", "providers": "Voor vakmensen", "mobile": "Mobiel" },
+    "tabs": {
+      "customers": "Voor klanten",
+      "providers": "Voor vakmensen",
+      "mobile": "Mobiel"
+    },
     "tabsLabel": "Kies een preview",
     "sample": "Ontwerppreview · voorbeeldgegevens",
     "enlarge": "Scherm vergroten",
@@ -164,15 +255,51 @@
     "previous": "Vorig scherm",
     "next": "Volgend scherm",
     "items": {
-      "home": { "title": "Beschrijf het", "text": "Schrijf in je eigen woorden wat je nodig hebt; Loqelo vindt de passende diensten.", "alt": "Loqelo-homescherm met het invoerveld ‘What do you need? Describe it.’" },
-      "postJob": { "title": "Klus plaatsen", "text": "Plaats een klus in ongeveer twee minuten, met foto’s, locatie en een gewenste datum.", "alt": "Loqelo-formulier ‘Klus plaatsen’" },
-      "offers": { "title": "Offertes vergelijken", "text": "Alle offertes naast elkaar, met de prijsspreiding in één oogopslag.", "alt": "Loqelo-klusdetails met vijf offertes en een prijsspreiding" },
-      "clientPanel": { "title": "Je klussen", "text": "Volg al je klussen en de laatste activiteit op één plek.", "alt": "Loqelo-klantdashboard ‘Mijn klussen’" },
-      "providerJobs": { "title": "Klussen voor jou", "text": "Bekijk passende aanvragen op een kaart, binnen jouw straal.", "alt": "Loqelo-dashboard voor vakmensen ‘Klussen voor jou’ met kaart" },
-      "providerOffer": { "title": "Offerte sturen", "text": "Stuur een heldere offerte met prijs, planning en wat er inbegrepen is.", "alt": "Loqelo-kluspagina voor vakmensen met het offerteformulier" },
-      "mobileHome": { "title": "Onderweg beschrijven", "text": "Dezelfde eenvoudige aanvraag op je telefoon.", "alt": "Mobiel homescherm van Loqelo" },
-      "mobileOffers": { "title": "Kies met één tik", "text": "Vergelijk offertes en kies een vakman vanaf je telefoon.", "alt": "Mobiele offertelijst van Loqelo" },
-      "mobileMap": { "title": "Klussen in de buurt", "text": "Vakmensen zien klussen in de buurt op een kaart.", "alt": "Mobiele Loqelo-kaart met klussen voor vakmensen" }
+      "home": {
+        "title": "Beschrijf het",
+        "text": "Schrijf in je eigen woorden wat je nodig hebt; Loqelo vindt de passende diensten.",
+        "alt": "Loqelo-homescherm met het invoerveld ‘What do you need? Describe it.’"
+      },
+      "postJob": {
+        "title": "Klus plaatsen",
+        "text": "Plaats een klus in ongeveer twee minuten, met foto’s, locatie en een gewenste datum.",
+        "alt": "Loqelo-formulier ‘Klus plaatsen’"
+      },
+      "offers": {
+        "title": "Offertes vergelijken",
+        "text": "Alle offertes naast elkaar, met de prijsspreiding in één oogopslag.",
+        "alt": "Loqelo-klusdetails met vijf offertes en een prijsspreiding"
+      },
+      "clientPanel": {
+        "title": "Je klussen",
+        "text": "Volg al je klussen en de laatste activiteit op één plek.",
+        "alt": "Loqelo-klantdashboard ‘Mijn klussen’"
+      },
+      "providerJobs": {
+        "title": "Klussen voor jou",
+        "text": "Bekijk passende aanvragen op een kaart, binnen jouw straal.",
+        "alt": "Loqelo-dashboard voor vakmensen ‘Klussen voor jou’ met kaart"
+      },
+      "providerOffer": {
+        "title": "Offerte sturen",
+        "text": "Stuur een heldere offerte met prijs, planning en wat er inbegrepen is.",
+        "alt": "Loqelo-kluspagina voor vakmensen met het offerteformulier"
+      },
+      "mobileHome": {
+        "title": "Onderweg beschrijven",
+        "text": "Dezelfde eenvoudige aanvraag op je telefoon.",
+        "alt": "Mobiel homescherm van Loqelo"
+      },
+      "mobileOffers": {
+        "title": "Kies met één tik",
+        "text": "Vergelijk offertes en kies een vakman vanaf je telefoon.",
+        "alt": "Mobiele offertelijst van Loqelo"
+      },
+      "mobileMap": {
+        "title": "Klussen in de buurt",
+        "text": "Vakmensen zien klussen in de buurt op een kaart.",
+        "alt": "Mobiele Loqelo-kaart met klussen voor vakmensen"
+      }
     }
   },
   "launch": {
@@ -182,9 +309,21 @@
     "month": "Februari",
     "year": "2027",
     "timeline": [
-      { "label": "Nu", "title": "Wachtlijst open", "text": "Schrijf je in als klant of als dienstverlener." },
-      { "label": "Voor de lancering", "title": "Projectupdates", "text": "Af en toe nieuws over het platform, de categorieën en waar Loqelo beschikbaar wordt." },
-      { "label": "Februari 2027", "title": "Lancering", "text": "Loqelo gaat open — en we laten het je per e-mail weten." }
+      {
+        "label": "Nu",
+        "title": "Wachtlijst open",
+        "text": "Schrijf je in als klant of als dienstverlener."
+      },
+      {
+        "label": "Voor de lancering",
+        "title": "Projectupdates",
+        "text": "Af en toe nieuws over het platform, de categorieën en waar Loqelo beschikbaar wordt."
+      },
+      {
+        "label": "Februari 2027",
+        "title": "Lancering",
+        "text": "Loqelo gaat open — en we laten het je per e-mail weten."
+      }
     ],
     "cta": "Naar de wachtlijst"
   },
@@ -193,8 +332,14 @@
     "title": "Doe mee vóór de lancering.",
     "lead": "Kies hoe je Loqelo wilt gebruiken. Het duurt minder dan een minuut.",
     "chooseLabel": "Ik schrijf me in als",
-    "customer": { "title": "Ik zoek diensten", "text": "Voor mijn huis, tuin of kantoor" },
-    "provider": { "title": "Ik bied diensten aan", "text": "Als vakman of dienstverlenend bedrijf" },
+    "customer": {
+      "title": "Ik zoek diensten",
+      "text": "Voor mijn huis, tuin of kantoor"
+    },
+    "provider": {
+      "title": "Ik bied diensten aan",
+      "text": "Als vakman of dienstverlenend bedrijf"
+    },
     "fields": {
       "email": "E-mailadres",
       "emailPlaceholder": "naam@voorbeeld.nl",
@@ -241,12 +386,30 @@
     "eyebrow": "FAQ",
     "title": "Vragen & antwoorden",
     "items": [
-      { "q": "Wanneer gaat Loqelo live?", "a": "De lancering van Loqelo staat gepland voor februari 2027. Iedereen op de wachtlijst krijgt een e-mail zodra het platform opengaat." },
-      { "q": "Wat gebeurt er als ik me inschrijf?", "a": "Je ontvangt per e-mail aankondigingen over de lancering en af en toe een projectupdate. Er zijn geen verplichtingen en je kunt je altijd met één klik afmelden." },
-      { "q": "Is inschrijven gratis?", "a": "Ja. Inschrijven voor de wachtlijst is helemaal gratis." },
-      { "q": "Welke diensten gaat Loqelo aanbieden?", "a": "Diensten voor huis, tuin en kantoor — van schoonmaak en reparaties tot tuinonderhoud, installaties en verhuizingen. De volledige lijst met categorieën maken we vóór de lancering bekend." },
-      { "q": "In welke landen komt Loqelo beschikbaar?", "a": "We verzamelen interesse van klanten en dienstverleners uit veel landen. De lanceringslocaties maken we vóór de lancering bekend." },
-      { "q": "Ik ben dienstverlener. Kan ik me nu al inschrijven?", "a": "Ja. Kies in het formulier ‘Ik bied diensten aan’ en selecteer het land waar je werkt. Vóór de lancering sturen we je updates voor vakmensen." }
+      {
+        "q": "Wanneer gaat Loqelo live?",
+        "a": "De lancering van Loqelo staat gepland voor februari 2027. Iedereen op de wachtlijst krijgt een e-mail zodra het platform opengaat."
+      },
+      {
+        "q": "Wat gebeurt er als ik me inschrijf?",
+        "a": "Je ontvangt per e-mail aankondigingen over de lancering en af en toe een projectupdate. Er zijn geen verplichtingen en je kunt je altijd met één klik afmelden."
+      },
+      {
+        "q": "Is inschrijven gratis?",
+        "a": "Ja. Inschrijven voor de wachtlijst is helemaal gratis."
+      },
+      {
+        "q": "Welke diensten gaat Loqelo aanbieden?",
+        "a": "Diensten voor huis, tuin en kantoor — van schoonmaak en reparaties tot tuinonderhoud, installaties en verhuizingen. De volledige lijst met categorieën maken we vóór de lancering bekend."
+      },
+      {
+        "q": "In welke landen komt Loqelo beschikbaar?",
+        "a": "We verzamelen interesse van klanten en dienstverleners uit veel landen. De lanceringslocaties maken we vóór de lancering bekend."
+      },
+      {
+        "q": "Ik ben dienstverlener. Kan ik me nu al inschrijven?",
+        "a": "Ja. Kies in het formulier ‘Ik bied diensten aan’ en selecteer het land waar je werkt. Vóór de lancering sturen we je updates voor vakmensen."
+      }
     ]
   },
   "finalCta": {

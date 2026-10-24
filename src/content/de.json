@@ -35,46 +35,111 @@
     "ctaCustomerHint": "Als Kunde eintragen",
     "ctaProvider": "Ich biete Dienstleistungen an",
     "ctaProviderHint": "Als Dienstleister eintragen",
-    "note": "Kostenlos · Nur Neuigkeiten zum Start · Jederzeit abmelden",
+    "trust": [
+      "Kostenlos",
+      "Nur Neuigkeiten zum Start",
+      "Jederzeit abmelden"
+    ],
+    "providerPrompt": "Du bietest Dienstleistungen an?",
     "demo": {
       "label": "Was brauchst du?",
       "anyLanguage": "In jeder Sprache",
       "found": "{count} Dienstleistungen erkannt",
       "recognising": "Dienstleistungen werden erkannt…",
-      "cta": "Angebote erhalten",
+      "cta": "Zur Warteliste",
       "preview": "Plattform-Vorschau",
-      "pause": "Demo anhalten",
-      "play": "Demo abspielen",
-      "places": ["Zuhause", "Garten", "Büro"],
+      "places": [
+        "Zuhause",
+        "Garten",
+        "Büro"
+      ],
       "scenarios": [
         {
           "segments": [
-            { "text": "Ich muss " },
-            { "text": "mein Haus putzen", "service": "Reinigung", "tone": "mint" },
-            { "text": " und " },
-            { "text": "die Fenster waschen", "service": "Fensterreinigung", "tone": "blue" },
-            { "text": " lassen." }
-          ]
+            {
+              "text": "Ich muss "
+            },
+            {
+              "text": "mein Haus putzen",
+              "service": "Reinigung",
+              "tone": "mint"
+            },
+            {
+              "text": " und "
+            },
+            {
+              "text": "die Fenster waschen",
+              "service": "Fensterreinigung",
+              "tone": "blue"
+            },
+            {
+              "text": " lassen."
+            }
+          ],
+          "city": "Amsterdam",
+          "detailLabel": "Fensterreinigung",
+          "detail": "12 Fenster, beidseitig"
         },
         {
           "segments": [
-            { "text": "Kann jemand diese Woche " },
-            { "text": "die Hecke schneiden", "service": "Heckenschnitt", "tone": "mint" },
-            { "text": " und " },
-            { "text": "den Rasen mähen", "service": "Rasenpflege", "tone": "amber" },
-            { "text": "?" }
-          ]
+            {
+              "text": "Kann jemand diese Woche "
+            },
+            {
+              "text": "die Hecke schneiden",
+              "service": "Heckenschnitt",
+              "tone": "mint"
+            },
+            {
+              "text": " und "
+            },
+            {
+              "text": "den Rasen mähen",
+              "service": "Rasenpflege",
+              "tone": "amber"
+            },
+            {
+              "text": "?"
+            }
+          ],
+          "city": "Amstelveen",
+          "detailLabel": "Heckenschnitt",
+          "detail": "18 m Hecke, Garten hinterm Haus"
         },
         {
           "segments": [
-            { "text": "Unser Büro braucht " },
-            { "text": "neue Deckenleuchten", "service": "Elektroarbeiten", "tone": "blue" },
-            { "text": " und eine " },
-            { "text": "Grundreinigung", "service": "Büroreinigung", "tone": "mint" },
-            { "text": "." }
-          ]
+            {
+              "text": "Unser Büro braucht "
+            },
+            {
+              "text": "neue Deckenleuchten",
+              "service": "Elektroarbeiten",
+              "tone": "blue"
+            },
+            {
+              "text": " und eine "
+            },
+            {
+              "text": "Grundreinigung",
+              "service": "Büroreinigung",
+              "tone": "mint"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "city": "Utrecht",
+          "detailLabel": "Elektroarbeiten",
+          "detail": "6 Deckenleuchten, Großraumbüro"
         }
-      ]
+      ],
+      "speak": "Sprechen",
+      "add": "Hinzufügen"
+    },
+    "offersCard": {
+      "label": "Nächster Schritt",
+      "title": "Angebote von Profis vor Ort",
+      "meta": "Preis · Zeitraum · Bewertung"
     }
   },
   "intro": {
@@ -82,12 +147,33 @@
     "title": "Ein Ort für alles, was dein Zuhause, Garten und Büro braucht.",
     "body": "Vom tropfenden Wasserhahn bis zur Gartenumgestaltung: Loqelo bringt Menschen, die etwas erledigt haben wollen, mit den Profis vor Ort zusammen, die es erledigen. Eine einfache Anfrage statt endlosem Suchen, Telefonieren und Vergleichen.",
     "places": [
-      { "key": "home", "title": "Zuhause", "text": "Reinigung, Reparaturen, Installationen, Renovierung und Umzüge." },
-      { "key": "garden", "title": "Garten", "text": "Rasen, Hecken und Bäume, Bewässerung und Pflege im Freien." },
-      { "key": "office", "title": "Büro", "text": "Büroreinigung, Instandhaltung, Elektrik und Innenausbau." }
+      {
+        "key": "home",
+        "title": "Zuhause",
+        "text": "Reinigung, Reparaturen, Installationen, Renovierung und Umzüge."
+      },
+      {
+        "key": "garden",
+        "title": "Garten",
+        "text": "Rasen, Hecken und Bäume, Bewässerung und Pflege im Freien."
+      },
+      {
+        "key": "office",
+        "title": "Büro",
+        "text": "Büroreinigung, Instandhaltung, Elektrik und Innenausbau."
+      }
     ],
     "moreLabel": "Geplante Kategorien u. a.",
-    "categories": ["Zuhause", "Garten", "Bau", "Installationen", "Haustiere", "Fahrzeuge", "Persönliche Dienste", "Umzug & Transport"]
+    "categories": [
+      "Zuhause",
+      "Garten",
+      "Bau",
+      "Installationen",
+      "Haustiere",
+      "Fahrzeuge",
+      "Persönliche Dienste",
+      "Umzug & Transport"
+    ]
   },
   "audiences": {
     "customers": {
@@ -150,13 +236,18 @@
     "text": "Ein kurzer Film darüber, wie Loqelo Menschen mit den richtigen Profis vor Ort verbindet — für Zuhause, Garten und Büro.",
     "play": "Loqelo-Video abspielen",
     "duration": "1:22",
-    "label": "Loqelo-Werbevideo"
+    "label": "Loqelo-Werbevideo",
+    "unmute": "Ton einschalten"
   },
   "preview": {
     "eyebrow": "Plattform-Vorschau",
     "title": "Ein erster Blick auf die Plattform.",
     "lead": "Für beide Seiten eines Auftrags gestaltet: einfach für Kunden, effizient für Dienstleister. Dies sind Designvorschauen der Plattform, die im Februar 2027 startet.",
-    "tabs": { "customers": "Für Kunden", "providers": "Für Profis", "mobile": "Mobil" },
+    "tabs": {
+      "customers": "Für Kunden",
+      "providers": "Für Profis",
+      "mobile": "Mobil"
+    },
     "tabsLabel": "Vorschau wählen",
     "sample": "Designvorschau · Beispieldaten",
     "enlarge": "Bildschirm vergrößern",
@@ -164,15 +255,51 @@
     "previous": "Vorheriger Bildschirm",
     "next": "Nächster Bildschirm",
     "items": {
-      "home": { "title": "Einfach beschreiben", "text": "Schreib in deinen Worten, was du brauchst; Loqelo findet die passenden Dienstleistungen.", "alt": "Loqelo-Startseite mit dem Eingabefeld „What do you need? Describe it.“" },
-      "postJob": { "title": "Auftrag erstellen", "text": "Ein Auftrag in etwa zwei Minuten — mit Fotos, Ort und Wunschtermin.", "alt": "Loqelo-Formular „Auftrag erstellen“" },
-      "offers": { "title": "Angebote vergleichen", "text": "Alle Angebote nebeneinander, die Preisspanne auf einen Blick.", "alt": "Loqelo-Auftragsdetails mit fünf Angeboten und Preisspanne" },
-      "clientPanel": { "title": "Deine Aufträge", "text": "Alle Aufträge und die neuesten Aktivitäten an einem Ort.", "alt": "Loqelo-Kundenbereich „Meine Aufträge“" },
-      "providerJobs": { "title": "Aufträge für dich", "text": "Passende Anfragen auf der Karte, innerhalb deines Umkreises.", "alt": "Loqelo-Dienstleisterbereich „Aufträge für dich“ mit Karte" },
-      "providerOffer": { "title": "Angebot senden", "text": "Ein klares Angebot mit Preis, Zeitraum und Leistungsumfang senden.", "alt": "Loqelo-Auftragsseite für Dienstleister mit dem Angebotsformular" },
-      "mobileHome": { "title": "Unterwegs beschreiben", "text": "Dieselbe einfache Anfrage auf deinem Smartphone.", "alt": "Mobile Loqelo-Startseite" },
-      "mobileOffers": { "title": "Mit einem Tipp wählen", "text": "Angebote vergleichen und Dienstleister am Smartphone auswählen.", "alt": "Mobile Loqelo-Angebotsliste" },
-      "mobileMap": { "title": "Aufträge in der Nähe", "text": "Dienstleister sehen Aufträge in ihrer Nähe auf der Karte.", "alt": "Mobile Loqelo-Karte mit Aufträgen für Dienstleister" }
+      "home": {
+        "title": "Einfach beschreiben",
+        "text": "Schreib in deinen Worten, was du brauchst; Loqelo findet die passenden Dienstleistungen.",
+        "alt": "Loqelo-Startseite mit dem Eingabefeld „What do you need? Describe it.“"
+      },
+      "postJob": {
+        "title": "Auftrag erstellen",
+        "text": "Ein Auftrag in etwa zwei Minuten — mit Fotos, Ort und Wunschtermin.",
+        "alt": "Loqelo-Formular „Auftrag erstellen“"
+      },
+      "offers": {
+        "title": "Angebote vergleichen",
+        "text": "Alle Angebote nebeneinander, die Preisspanne auf einen Blick.",
+        "alt": "Loqelo-Auftragsdetails mit fünf Angeboten und Preisspanne"
+      },
+      "clientPanel": {
+        "title": "Deine Aufträge",
+        "text": "Alle Aufträge und die neuesten Aktivitäten an einem Ort.",
+        "alt": "Loqelo-Kundenbereich „Meine Aufträge“"
+      },
+      "providerJobs": {
+        "title": "Aufträge für dich",
+        "text": "Passende Anfragen auf der Karte, innerhalb deines Umkreises.",
+        "alt": "Loqelo-Dienstleisterbereich „Aufträge für dich“ mit Karte"
+      },
+      "providerOffer": {
+        "title": "Angebot senden",
+        "text": "Ein klares Angebot mit Preis, Zeitraum und Leistungsumfang senden.",
+        "alt": "Loqelo-Auftragsseite für Dienstleister mit dem Angebotsformular"
+      },
+      "mobileHome": {
+        "title": "Unterwegs beschreiben",
+        "text": "Dieselbe einfache Anfrage auf deinem Smartphone.",
+        "alt": "Mobile Loqelo-Startseite"
+      },
+      "mobileOffers": {
+        "title": "Mit einem Tipp wählen",
+        "text": "Angebote vergleichen und Dienstleister am Smartphone auswählen.",
+        "alt": "Mobile Loqelo-Angebotsliste"
+      },
+      "mobileMap": {
+        "title": "Aufträge in der Nähe",
+        "text": "Dienstleister sehen Aufträge in ihrer Nähe auf der Karte.",
+        "alt": "Mobile Loqelo-Karte mit Aufträgen für Dienstleister"
+      }
     }
   },
   "launch": {
@@ -182,9 +309,21 @@
     "month": "Februar",
     "year": "2027",
     "timeline": [
-      { "label": "Jetzt", "title": "Warteliste geöffnet", "text": "Trag dich als Kunde oder als Dienstleister ein." },
-      { "label": "Vor dem Start", "title": "Projekt-Updates", "text": "Gelegentliche Neuigkeiten zur Plattform, zu den Kategorien und dazu, wo Loqelo verfügbar sein wird." },
-      { "label": "Februar 2027", "title": "Start", "text": "Loqelo geht an den Start — wir sagen dir per E-Mail Bescheid." }
+      {
+        "label": "Jetzt",
+        "title": "Warteliste geöffnet",
+        "text": "Trag dich als Kunde oder als Dienstleister ein."
+      },
+      {
+        "label": "Vor dem Start",
+        "title": "Projekt-Updates",
+        "text": "Gelegentliche Neuigkeiten zur Plattform, zu den Kategorien und dazu, wo Loqelo verfügbar sein wird."
+      },
+      {
+        "label": "Februar 2027",
+        "title": "Start",
+        "text": "Loqelo geht an den Start — wir sagen dir per E-Mail Bescheid."
+      }
     ],
     "cta": "Zur Warteliste"
   },
@@ -193,8 +332,14 @@
     "title": "Vor dem Start dabei sein.",
     "lead": "Wähle, wie du Loqelo nutzen möchtest. Es dauert weniger als eine Minute.",
     "chooseLabel": "Ich möchte mich eintragen als",
-    "customer": { "title": "Ich suche Dienstleistungen", "text": "Für mein Zuhause, meinen Garten oder mein Büro" },
-    "provider": { "title": "Ich biete Dienstleistungen an", "text": "Als Handwerker oder Dienstleistungsunternehmen" },
+    "customer": {
+      "title": "Ich suche Dienstleistungen",
+      "text": "Für mein Zuhause, meinen Garten oder mein Büro"
+    },
+    "provider": {
+      "title": "Ich biete Dienstleistungen an",
+      "text": "Als Handwerker oder Dienstleistungsunternehmen"
+    },
     "fields": {
       "email": "E-Mail-Adresse",
       "emailPlaceholder": "name@beispiel.de",
@@ -241,12 +386,30 @@
     "eyebrow": "FAQ",
     "title": "Fragen & Antworten",
     "items": [
-      { "q": "Wann startet Loqelo?", "a": "Der Start von Loqelo ist für Februar 2027 geplant. Alle auf der Warteliste erhalten eine E-Mail, sobald es losgeht." },
-      { "q": "Was passiert, wenn ich mich eintrage?", "a": "Du erhältst per E-Mail Ankündigungen zum Start und gelegentliche Projekt-Updates. Es entstehen keine Verpflichtungen, und du kannst dich jederzeit mit einem Klick abmelden." },
-      { "q": "Ist die Warteliste kostenlos?", "a": "Ja. Die Eintragung in die Warteliste ist völlig kostenlos." },
-      { "q": "Welche Dienstleistungen wird Loqelo abdecken?", "a": "Dienstleistungen für Zuhause, Garten und Büro — von Reinigung und Reparaturen über Gartenarbeit bis zu Installationen und Umzügen. Die vollständige Liste der Kategorien geben wir vor dem Start bekannt." },
-      { "q": "In welchen Ländern wird Loqelo verfügbar sein?", "a": "Wir sammeln das Interesse von Kunden und Dienstleistern aus vielen Ländern. Die Startregionen geben wir vor dem Start bekannt." },
-      { "q": "Ich bin Dienstleister. Kann ich mich schon jetzt eintragen?", "a": "Ja. Wähle im Formular „Ich biete Dienstleistungen an“ und das Land, in dem du arbeitest. Vor dem Start schicken wir dir Neuigkeiten für Dienstleister." }
+      {
+        "q": "Wann startet Loqelo?",
+        "a": "Der Start von Loqelo ist für Februar 2027 geplant. Alle auf der Warteliste erhalten eine E-Mail, sobald es losgeht."
+      },
+      {
+        "q": "Was passiert, wenn ich mich eintrage?",
+        "a": "Du erhältst per E-Mail Ankündigungen zum Start und gelegentliche Projekt-Updates. Es entstehen keine Verpflichtungen, und du kannst dich jederzeit mit einem Klick abmelden."
+      },
+      {
+        "q": "Ist die Warteliste kostenlos?",
+        "a": "Ja. Die Eintragung in die Warteliste ist völlig kostenlos."
+      },
+      {
+        "q": "Welche Dienstleistungen wird Loqelo abdecken?",
+        "a": "Dienstleistungen für Zuhause, Garten und Büro — von Reinigung und Reparaturen über Gartenarbeit bis zu Installationen und Umzügen. Die vollständige Liste der Kategorien geben wir vor dem Start bekannt."
+      },
+      {
+        "q": "In welchen Ländern wird Loqelo verfügbar sein?",
+        "a": "Wir sammeln das Interesse von Kunden und Dienstleistern aus vielen Ländern. Die Startregionen geben wir vor dem Start bekannt."
+      },
+      {
+        "q": "Ich bin Dienstleister. Kann ich mich schon jetzt eintragen?",
+        "a": "Ja. Wähle im Formular „Ich biete Dienstleistungen an“ und das Land, in dem du arbeitest. Vor dem Start schicken wir dir Neuigkeiten für Dienstleister."
+      }
     ]
   },
   "finalCta": {

@@ -55,6 +55,7 @@ const photoJobs = [
   ['Your photos/hero.jpg', 'office', 1200],
   ['Your photos/build.jpg', 'construction', 800],
   ['Your photos/inst.jpg', 'installations', 800],
+  ['Your photos/inst.jpg', 'installations-lg', 1200],
   ['Your photos/pets.jpg', 'pets', 800],
   ['Your photos/vehicles.jpg', 'vehicles', 800],
   ['Your photos/care.jpg', 'personal-services', 800],

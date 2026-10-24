@@ -35,46 +35,111 @@
     "ctaCustomerHint": "Unirme como cliente",
     "ctaProvider": "Ofrezco servicios",
     "ctaProviderHint": "Unirme como profesional",
-    "note": "Gratis · Solo novedades del lanzamiento · Date de baja cuando quieras",
+    "trust": [
+      "Gratis",
+      "Solo novedades del lanzamiento",
+      "Date de baja cuando quieras"
+    ],
+    "providerPrompt": "¿Ofreces servicios?",
     "demo": {
       "label": "¿Qué necesitas?",
       "anyLanguage": "En cualquier idioma",
       "found": "Hemos encontrado {count} servicios",
       "recognising": "Reconociendo servicios…",
-      "cta": "Recibir ofertas",
+      "cta": "Unirme a la lista",
       "preview": "Vista previa de la plataforma",
-      "pause": "Pausar la demo",
-      "play": "Reproducir la demo",
-      "places": ["Casa", "Jardín", "Oficina"],
+      "places": [
+        "Casa",
+        "Jardín",
+        "Oficina"
+      ],
       "scenarios": [
         {
           "segments": [
-            { "text": "Necesito " },
-            { "text": "limpiar mi casa", "service": "Limpieza", "tone": "mint" },
-            { "text": " y " },
-            { "text": "lavar las ventanas", "service": "Limpieza de cristales", "tone": "blue" },
-            { "text": "." }
-          ]
+            {
+              "text": "Necesito "
+            },
+            {
+              "text": "limpiar mi casa",
+              "service": "Limpieza",
+              "tone": "mint"
+            },
+            {
+              "text": " y "
+            },
+            {
+              "text": "lavar las ventanas",
+              "service": "Limpieza de cristales",
+              "tone": "blue"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "city": "Amsterdam",
+          "detailLabel": "Limpieza de cristales",
+          "detail": "12 ventanas, por ambos lados"
         },
         {
           "segments": [
-            { "text": "¿Alguien puede " },
-            { "text": "podar el seto", "service": "Poda de setos", "tone": "mint" },
-            { "text": " y " },
-            { "text": "cortar el césped", "service": "Cuidado del césped", "tone": "amber" },
-            { "text": " esta semana?" }
-          ]
+            {
+              "text": "¿Alguien puede "
+            },
+            {
+              "text": "podar el seto",
+              "service": "Poda de setos",
+              "tone": "mint"
+            },
+            {
+              "text": " y "
+            },
+            {
+              "text": "cortar el césped",
+              "service": "Cuidado del césped",
+              "tone": "amber"
+            },
+            {
+              "text": " esta semana?"
+            }
+          ],
+          "city": "Amstelveen",
+          "detailLabel": "Poda de setos",
+          "detail": "Seto de 18 m, jardín trasero"
         },
         {
           "segments": [
-            { "text": "Nuestra oficina necesita " },
-            { "text": "lámparas de techo nuevas", "service": "Electricidad", "tone": "blue" },
-            { "text": " y una " },
-            { "text": "limpieza a fondo", "service": "Limpieza de oficinas", "tone": "mint" },
-            { "text": "." }
-          ]
+            {
+              "text": "Nuestra oficina necesita "
+            },
+            {
+              "text": "lámparas de techo nuevas",
+              "service": "Electricidad",
+              "tone": "blue"
+            },
+            {
+              "text": " y una "
+            },
+            {
+              "text": "limpieza a fondo",
+              "service": "Limpieza de oficinas",
+              "tone": "mint"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "city": "Utrecht",
+          "detailLabel": "Electricidad",
+          "detail": "6 lámparas de techo, oficina abierta"
         }
-      ]
+      ],
+      "speak": "Dictar",
+      "add": "Añadir"
+    },
+    "offersCard": {
+      "label": "Siguiente paso",
+      "title": "Ofertas de profesionales locales",
+      "meta": "Precio · plazo · valoración"
     }
   },
   "intro": {
@@ -82,12 +147,33 @@
     "title": "Un solo lugar para todo lo que tu espacio necesita.",
     "body": "Desde un grifo que gotea hasta renovar el jardín, Loqelo reunirá a quienes necesitan un trabajo con los profesionales locales que lo realizan. Una sola solicitud sencilla en lugar de buscar, llamar y comparar sin fin.",
     "places": [
-      { "key": "home", "title": "Casa", "text": "Limpieza, reparaciones, instalaciones, reformas y mudanzas." },
-      { "key": "garden", "title": "Jardín", "text": "Césped, setos y árboles, riego y mantenimiento exterior." },
-      { "key": "office", "title": "Oficina", "text": "Limpieza de oficinas, mantenimiento, electricidad y acondicionamiento." }
+      {
+        "key": "home",
+        "title": "Casa",
+        "text": "Limpieza, reparaciones, instalaciones, reformas y mudanzas."
+      },
+      {
+        "key": "garden",
+        "title": "Jardín",
+        "text": "Césped, setos y árboles, riego y mantenimiento exterior."
+      },
+      {
+        "key": "office",
+        "title": "Oficina",
+        "text": "Limpieza de oficinas, mantenimiento, electricidad y acondicionamiento."
+      }
     ],
     "moreLabel": "Entre las categorías previstas",
-    "categories": ["Casa", "Jardín", "Construcción", "Instalaciones", "Mascotas", "Vehículos", "Servicios personales", "Mudanzas y transporte"]
+    "categories": [
+      "Casa",
+      "Jardín",
+      "Construcción",
+      "Instalaciones",
+      "Mascotas",
+      "Vehículos",
+      "Servicios personales",
+      "Mudanzas y transporte"
+    ]
   },
   "audiences": {
     "customers": {
@@ -150,13 +236,18 @@
     "text": "Un breve vídeo sobre cómo Loqelo conectará a las personas con los profesionales locales adecuados, en casa, en el jardín y en la oficina.",
     "play": "Reproducir el vídeo de Loqelo",
     "duration": "1:22",
-    "label": "Vídeo promocional de Loqelo"
+    "label": "Vídeo promocional de Loqelo",
+    "unmute": "Activar sonido"
   },
   "preview": {
     "eyebrow": "Vista previa de la plataforma",
     "title": "Un primer vistazo a la plataforma.",
     "lead": "Diseñada para ambas partes del trabajo: sencilla para los clientes, eficiente para los profesionales. Son vistas previas de diseño de la plataforma que se lanzará en febrero de 2027.",
-    "tabs": { "customers": "Clientes", "providers": "Profesionales", "mobile": "En el móvil" },
+    "tabs": {
+      "customers": "Clientes",
+      "providers": "Profesionales",
+      "mobile": "En el móvil"
+    },
     "tabsLabel": "Elegir una vista previa",
     "sample": "Vista previa de diseño · datos de ejemplo",
     "enlarge": "Ampliar pantalla",
@@ -164,15 +255,51 @@
     "previous": "Pantalla anterior",
     "next": "Pantalla siguiente",
     "items": {
-      "home": { "title": "Descríbelo", "text": "Escribe con tus palabras lo que necesitas; Loqelo encuentra los servicios adecuados.", "alt": "Pantalla de inicio de Loqelo con el campo «What do you need? Describe it.»" },
-      "postJob": { "title": "Publicar un trabajo", "text": "Publica un trabajo en unos dos minutos, con fotos, ubicación y fecha preferida.", "alt": "Formulario de Loqelo «Publicar un trabajo»" },
-      "offers": { "title": "Comparar ofertas", "text": "Todas las ofertas lado a lado, con el rango de precios de un vistazo.", "alt": "Detalles de un trabajo en Loqelo con cinco ofertas y un rango de precios" },
-      "clientPanel": { "title": "Tus trabajos", "text": "Sigue todos tus trabajos y la actividad más reciente en un solo lugar.", "alt": "Panel de cliente de Loqelo «Mis trabajos»" },
-      "providerJobs": { "title": "Trabajos para ti", "text": "Ve en un mapa las solicitudes que encajan con tus servicios, dentro de tu radio.", "alt": "Panel de profesional de Loqelo «Trabajos para ti» con mapa" },
-      "providerOffer": { "title": "Enviar una oferta", "text": "Envía una oferta clara con tu precio, plazo y lo que incluye.", "alt": "Página de trabajo para profesionales de Loqelo con el formulario de oferta" },
-      "mobileHome": { "title": "Descríbelo desde cualquier lugar", "text": "La misma solicitud sencilla, en tu móvil.", "alt": "Pantalla de inicio móvil de Loqelo" },
-      "mobileOffers": { "title": "Elige con un toque", "text": "Compara ofertas y elige un profesional desde tu móvil.", "alt": "Lista de ofertas móvil de Loqelo" },
-      "mobileMap": { "title": "Trabajos cerca", "text": "Los profesionales ven los trabajos cercanos en un mapa.", "alt": "Mapa móvil de Loqelo con trabajos para profesionales" }
+      "home": {
+        "title": "Descríbelo",
+        "text": "Escribe con tus palabras lo que necesitas; Loqelo encuentra los servicios adecuados.",
+        "alt": "Pantalla de inicio de Loqelo con el campo «What do you need? Describe it.»"
+      },
+      "postJob": {
+        "title": "Publicar un trabajo",
+        "text": "Publica un trabajo en unos dos minutos, con fotos, ubicación y fecha preferida.",
+        "alt": "Formulario de Loqelo «Publicar un trabajo»"
+      },
+      "offers": {
+        "title": "Comparar ofertas",
+        "text": "Todas las ofertas lado a lado, con el rango de precios de un vistazo.",
+        "alt": "Detalles de un trabajo en Loqelo con cinco ofertas y un rango de precios"
+      },
+      "clientPanel": {
+        "title": "Tus trabajos",
+        "text": "Sigue todos tus trabajos y la actividad más reciente en un solo lugar.",
+        "alt": "Panel de cliente de Loqelo «Mis trabajos»"
+      },
+      "providerJobs": {
+        "title": "Trabajos para ti",
+        "text": "Ve en un mapa las solicitudes que encajan con tus servicios, dentro de tu radio.",
+        "alt": "Panel de profesional de Loqelo «Trabajos para ti» con mapa"
+      },
+      "providerOffer": {
+        "title": "Enviar una oferta",
+        "text": "Envía una oferta clara con tu precio, plazo y lo que incluye.",
+        "alt": "Página de trabajo para profesionales de Loqelo con el formulario de oferta"
+      },
+      "mobileHome": {
+        "title": "Descríbelo desde cualquier lugar",
+        "text": "La misma solicitud sencilla, en tu móvil.",
+        "alt": "Pantalla de inicio móvil de Loqelo"
+      },
+      "mobileOffers": {
+        "title": "Elige con un toque",
+        "text": "Compara ofertas y elige un profesional desde tu móvil.",
+        "alt": "Lista de ofertas móvil de Loqelo"
+      },
+      "mobileMap": {
+        "title": "Trabajos cerca",
+        "text": "Los profesionales ven los trabajos cercanos en un mapa.",
+        "alt": "Mapa móvil de Loqelo con trabajos para profesionales"
+      }
     }
   },
   "launch": {
@@ -182,9 +309,21 @@
     "month": "Febrero",
     "year": "2027",
     "timeline": [
-      { "label": "Ahora", "title": "Lista de espera abierta", "text": "Regístrate como cliente o como profesional." },
-      { "label": "Antes del lanzamiento", "title": "Novedades del proyecto", "text": "Noticias ocasionales sobre la plataforma, las categorías de servicios y dónde estará disponible Loqelo." },
-      { "label": "Febrero de 2027", "title": "Lanzamiento", "text": "Loqelo abre sus puertas y te avisamos por correo electrónico." }
+      {
+        "label": "Ahora",
+        "title": "Lista de espera abierta",
+        "text": "Regístrate como cliente o como profesional."
+      },
+      {
+        "label": "Antes del lanzamiento",
+        "title": "Novedades del proyecto",
+        "text": "Noticias ocasionales sobre la plataforma, las categorías de servicios y dónde estará disponible Loqelo."
+      },
+      {
+        "label": "Febrero de 2027",
+        "title": "Lanzamiento",
+        "text": "Loqelo abre sus puertas y te avisamos por correo electrónico."
+      }
     ],
     "cta": "Unirme a la lista"
   },
@@ -193,8 +332,14 @@
     "title": "Únete antes del lanzamiento.",
     "lead": "Elige cómo quieres usar Loqelo. Tardarás menos de un minuto.",
     "chooseLabel": "Quiero unirme como",
-    "customer": { "title": "Busco servicios", "text": "Para mi casa, jardín u oficina" },
-    "provider": { "title": "Ofrezco servicios", "text": "Como autónomo o empresa de servicios" },
+    "customer": {
+      "title": "Busco servicios",
+      "text": "Para mi casa, jardín u oficina"
+    },
+    "provider": {
+      "title": "Ofrezco servicios",
+      "text": "Como autónomo o empresa de servicios"
+    },
     "fields": {
       "email": "Correo electrónico",
       "emailPlaceholder": "nombre@ejemplo.es",
@@ -241,12 +386,30 @@
     "eyebrow": "FAQ",
     "title": "Preguntas y respuestas",
     "items": [
-      { "q": "¿Cuándo se lanza Loqelo?", "a": "El lanzamiento de Loqelo está previsto para febrero de 2027. Todas las personas de la lista de espera recibirán un correo cuando abra." },
-      { "q": "¿Qué pasa cuando me uno a la lista de espera?", "a": "Recibirás por correo los anuncios del lanzamiento y novedades ocasionales del proyecto. Sin compromiso, y puedes darte de baja en cualquier momento con un clic." },
-      { "q": "¿Unirse a la lista de espera es gratis?", "a": "Sí. Unirse a la lista de espera es totalmente gratuito." },
-      { "q": "¿Qué servicios cubrirá Loqelo?", "a": "Servicios para casa, jardín y oficina: desde limpieza y reparaciones hasta jardinería, instalaciones y mudanzas. La lista completa de categorías se anunciará antes del lanzamiento." },
-      { "q": "¿En qué países estará disponible Loqelo?", "a": "Estamos recogiendo el interés de clientes y profesionales de muchos países. Los lugares de lanzamiento se anunciarán antes del lanzamiento." },
-      { "q": "Soy profesional. ¿Puedo registrarme ya?", "a": "Sí. Elige «Ofrezco servicios» en el formulario y selecciona el país donde trabajas. Antes del lanzamiento te enviaremos novedades para profesionales." }
+      {
+        "q": "¿Cuándo se lanza Loqelo?",
+        "a": "El lanzamiento de Loqelo está previsto para febrero de 2027. Todas las personas de la lista de espera recibirán un correo cuando abra."
+      },
+      {
+        "q": "¿Qué pasa cuando me uno a la lista de espera?",
+        "a": "Recibirás por correo los anuncios del lanzamiento y novedades ocasionales del proyecto. Sin compromiso, y puedes darte de baja en cualquier momento con un clic."
+      },
+      {
+        "q": "¿Unirse a la lista de espera es gratis?",
+        "a": "Sí. Unirse a la lista de espera es totalmente gratuito."
+      },
+      {
+        "q": "¿Qué servicios cubrirá Loqelo?",
+        "a": "Servicios para casa, jardín y oficina: desde limpieza y reparaciones hasta jardinería, instalaciones y mudanzas. La lista completa de categorías se anunciará antes del lanzamiento."
+      },
+      {
+        "q": "¿En qué países estará disponible Loqelo?",
+        "a": "Estamos recogiendo el interés de clientes y profesionales de muchos países. Los lugares de lanzamiento se anunciarán antes del lanzamiento."
+      },
+      {
+        "q": "Soy profesional. ¿Puedo registrarme ya?",
+        "a": "Sí. Elige «Ofrezco servicios» en el formulario y selecciona el país donde trabajas. Antes del lanzamiento te enviaremos novedades para profesionales."
+      }
     ]
   },
   "finalCta": {

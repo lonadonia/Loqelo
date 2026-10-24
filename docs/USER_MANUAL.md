@@ -141,7 +141,7 @@ Country → language rules are in `src/lib/i18n/detect.ts`. Adding a language me
 | Basic conversion rate | Key event rate = sign-ups ÷ users (shown next to key events) |
 | Form effectiveness | Explore → *Funnel exploration*: `waitlist_form_view` → `waitlist_form_start` → `waitlist_signup_*`, broken down by `audience` |
 | Where problems happen | `waitlist_form_error` by `error_type` (validation, server, network, spam, rate_limited, unavailable) |
-| Video interest | `promo_video_play`, `promo_video_progress` (25/50/75 %), `promo_video_complete` |
+| Video interest | `promo_video_play` (started, incl. muted autoplay), `promo_video_unmute` (sound turned on), `promo_video_progress` (25/50/75 %), `promo_video_complete` |
 
 **Events sent by the site**
 
@@ -153,7 +153,7 @@ Country → language rules are in `src/lib/i18n/detect.ts`. Adding a language me
 | `waitlist_form_start` | First interaction with the form (per path) | audience |
 | `waitlist_form_error` | Validation or submission problem | audience, error_type |
 | `cta_click` | “I need / I offer services” and waitlist buttons | cta_location, audience |
-| `promo_video_play` / `_progress` / `_complete` | Video watched | percent |
+| `promo_video_play` / `_unmute` / `_progress` / `_complete` | Video started (autoplays muted when scrolled into view) / sound turned on / watched | percent |
 | `language_change` | Language switched manually | from_language, to_language |
 
 Privacy rules built into the site: GA loads **only after consent**. Advertising features and Google signals are off. Page addresses are sent **without query strings**. Event parameters come from a fixed allow-list, so **no email addresses or form answers** can be sent. Countries in GA come from GA's own IP-based location, not from the form. Visitors can change their choice at any time under **Cookie settings** in the footer.

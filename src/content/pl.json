@@ -35,46 +35,111 @@
     "ctaCustomerHint": "Dołącz jako klient",
     "ctaProvider": "Oferuję usługi",
     "ctaProviderHint": "Dołącz jako wykonawca",
-    "note": "Bezpłatnie · Tylko informacje o starcie · Wypisz się w każdej chwili",
+    "trust": [
+      "Bezpłatny zapis",
+      "Tylko informacje o starcie",
+      "Wypisz się w każdej chwili"
+    ],
+    "providerPrompt": "Świadczysz usługi?",
     "demo": {
       "label": "Czego potrzebujesz?",
       "anyLanguage": "W dowolnym języku",
       "found": "Znaleźliśmy usługi: {count}",
       "recognising": "Rozpoznajemy usługi…",
-      "cta": "Otrzymaj oferty",
+      "cta": "Zapisz się",
       "preview": "Podgląd platformy",
-      "pause": "Zatrzymaj demo",
-      "play": "Odtwórz demo",
-      "places": ["Dom", "Ogród", "Biuro"],
+      "places": [
+        "Dom",
+        "Ogród",
+        "Biuro"
+      ],
       "scenarios": [
         {
           "segments": [
-            { "text": "Potrzebuję " },
-            { "text": "posprzątać dom", "service": "Sprzątanie", "tone": "mint" },
-            { "text": " i " },
-            { "text": "umyć okna", "service": "Mycie okien", "tone": "blue" },
-            { "text": "." }
-          ]
+            {
+              "text": "Potrzebuję "
+            },
+            {
+              "text": "posprzątać dom",
+              "service": "Sprzątanie",
+              "tone": "mint"
+            },
+            {
+              "text": " i "
+            },
+            {
+              "text": "umyć okna",
+              "service": "Mycie okien",
+              "tone": "blue"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "city": "Amsterdam",
+          "detailLabel": "Mycie okien",
+          "detail": "12 okien, z obu stron"
         },
         {
           "segments": [
-            { "text": "Czy ktoś może " },
-            { "text": "przyciąć żywopłot", "service": "Przycinanie żywopłotu", "tone": "mint" },
-            { "text": " i " },
-            { "text": "skosić trawnik", "service": "Pielęgnacja trawnika", "tone": "amber" },
-            { "text": " w tym tygodniu?" }
-          ]
+            {
+              "text": "Czy ktoś może "
+            },
+            {
+              "text": "przyciąć żywopłot",
+              "service": "Przycinanie żywopłotu",
+              "tone": "mint"
+            },
+            {
+              "text": " i "
+            },
+            {
+              "text": "skosić trawnik",
+              "service": "Pielęgnacja trawnika",
+              "tone": "amber"
+            },
+            {
+              "text": " w tym tygodniu?"
+            }
+          ],
+          "city": "Amstelveen",
+          "detailLabel": "Przycinanie żywopłotu",
+          "detail": "18 m żywopłotu, ogród za domem"
         },
         {
           "segments": [
-            { "text": "W biurze potrzebujemy " },
-            { "text": "nowych lamp sufitowych", "service": "Prace elektryczne", "tone": "blue" },
-            { "text": " i " },
-            { "text": "gruntownego sprzątania", "service": "Sprzątanie biur", "tone": "mint" },
-            { "text": "." }
-          ]
+            {
+              "text": "W biurze potrzebujemy "
+            },
+            {
+              "text": "nowych lamp sufitowych",
+              "service": "Prace elektryczne",
+              "tone": "blue"
+            },
+            {
+              "text": " i "
+            },
+            {
+              "text": "gruntownego sprzątania",
+              "service": "Sprzątanie biur",
+              "tone": "mint"
+            },
+            {
+              "text": "."
+            }
+          ],
+          "city": "Utrecht",
+          "detailLabel": "Prace elektryczne",
+          "detail": "6 lamp sufitowych, open space"
         }
-      ]
+      ],
+      "speak": "Powiedz",
+      "add": "Dodaj"
+    },
+    "offersCard": {
+      "label": "Następny krok",
+      "title": "Oferty od lokalnych fachowców",
+      "meta": "Cena · termin · ocena"
     }
   },
   "intro": {
@@ -82,12 +147,33 @@
     "title": "Jedno miejsce na wszystko, czego potrzebuje Twoje miejsce.",
     "body": "Od cieknącego kranu po metamorfozę ogrodu — Loqelo połączy osoby, które potrzebują pomocy, z lokalnymi fachowcami, którzy ją zapewnią. Jedno proste zgłoszenie zamiast niekończącego się szukania, dzwonienia i porównywania.",
     "places": [
-      { "key": "home", "title": "Dom", "text": "Sprzątanie, naprawy, instalacje, remonty i przeprowadzki." },
-      { "key": "garden", "title": "Ogród", "text": "Trawniki, żywopłoty i drzewa, nawadnianie oraz prace na zewnątrz." },
-      { "key": "office", "title": "Biuro", "text": "Sprzątanie biur, konserwacja, elektryka i aranżacja wnętrz." }
+      {
+        "key": "home",
+        "title": "Dom",
+        "text": "Sprzątanie, naprawy, instalacje, remonty i przeprowadzki."
+      },
+      {
+        "key": "garden",
+        "title": "Ogród",
+        "text": "Trawniki, żywopłoty i drzewa, nawadnianie oraz prace na zewnątrz."
+      },
+      {
+        "key": "office",
+        "title": "Biuro",
+        "text": "Sprzątanie biur, konserwacja, elektryka i aranżacja wnętrz."
+      }
     ],
     "moreLabel": "Planowane kategorie to m.in.",
-    "categories": ["Dom", "Ogród", "Budowa", "Instalacje", "Zwierzęta", "Pojazdy", "Usługi osobiste", "Przeprowadzki i transport"]
+    "categories": [
+      "Dom",
+      "Ogród",
+      "Budowa",
+      "Instalacje",
+      "Zwierzęta",
+      "Pojazdy",
+      "Usługi osobiste",
+      "Przeprowadzki i transport"
+    ]
   },
   "audiences": {
     "customers": {
@@ -150,13 +236,18 @@
     "text": "Krótki film o tym, jak Loqelo połączy ludzi z właściwymi lokalnymi fachowcami — w domu, w ogrodzie i w biurze.",
     "play": "Odtwórz film Loqelo",
     "duration": "1:22",
-    "label": "Film promocyjny Loqelo"
+    "label": "Film promocyjny Loqelo",
+    "unmute": "Włącz dźwięk"
   },
   "preview": {
     "eyebrow": "Podgląd platformy",
     "title": "Pierwsze spojrzenie na platformę.",
     "lead": "Zaprojektowana dla obu stron zlecenia: prosta dla klientów, wydajna dla wykonawców. To podglądy projektu platformy, która wystartuje w lutym 2027.",
-    "tabs": { "customers": "Dla klientów", "providers": "Dla wykonawców", "mobile": "Mobilnie" },
+    "tabs": {
+      "customers": "Dla klientów",
+      "providers": "Dla wykonawców",
+      "mobile": "Mobilnie"
+    },
     "tabsLabel": "Wybierz podgląd",
     "sample": "Podgląd projektu · przykładowe dane",
     "enlarge": "Powiększ ekran",
@@ -164,15 +255,51 @@
     "previous": "Poprzedni ekran",
     "next": "Następny ekran",
     "items": {
-      "home": { "title": "Opisz to", "text": "Napisz własnymi słowami, czego potrzebujesz; Loqelo znajdzie pasujące usługi.", "alt": "Ekran główny Loqelo z polem „Czego potrzebujesz? Opisz to.”" },
-      "postJob": { "title": "Dodaj zlecenie", "text": "Dodaj zlecenie w około dwie minuty — ze zdjęciami, lokalizacją i preferowaną datą.", "alt": "Formularz Loqelo „Dodaj zlecenie”" },
-      "offers": { "title": "Porównaj oferty", "text": "Wszystkie oferty obok siebie, z rozpiętością cen na pierwszy rzut oka.", "alt": "Szczegóły zlecenia Loqelo z pięcioma ofertami i wykresem rozpiętości cen" },
-      "clientPanel": { "title": "Twoje zlecenia", "text": "Śledź wszystkie zlecenia i najnowsze zdarzenia w jednym miejscu.", "alt": "Panel klienta Loqelo „Moje zlecenia”" },
-      "providerJobs": { "title": "Zlecenia dla Ciebie", "text": "Zobacz na mapie zlecenia pasujące do Twoich usług, w Twoim promieniu.", "alt": "Panel wykonawcy Loqelo „Zlecenia dla Ciebie” z mapą" },
-      "providerOffer": { "title": "Wyślij ofertę", "text": "Wyślij przejrzystą ofertę z ceną, terminem i zakresem prac.", "alt": "Strona zlecenia dla wykonawcy z formularzem „Wyślij najlepszą ofertę”" },
-      "mobileHome": { "title": "Opisz to w drodze", "text": "To samo proste zgłoszenie na Twoim telefonie.", "alt": "Mobilny ekran główny Loqelo" },
-      "mobileOffers": { "title": "Wybierz jednym dotknięciem", "text": "Porównuj oferty i wybieraj wykonawcę z telefonu.", "alt": "Mobilna lista ofert Loqelo" },
-      "mobileMap": { "title": "Zlecenia w pobliżu", "text": "Wykonawcy widzą pobliskie zlecenia na mapie.", "alt": "Mobilna mapa zleceń Loqelo dla wykonawców" }
+      "home": {
+        "title": "Opisz to",
+        "text": "Napisz własnymi słowami, czego potrzebujesz; Loqelo znajdzie pasujące usługi.",
+        "alt": "Ekran główny Loqelo z polem „Czego potrzebujesz? Opisz to.”"
+      },
+      "postJob": {
+        "title": "Dodaj zlecenie",
+        "text": "Dodaj zlecenie w około dwie minuty — ze zdjęciami, lokalizacją i preferowaną datą.",
+        "alt": "Formularz Loqelo „Dodaj zlecenie”"
+      },
+      "offers": {
+        "title": "Porównaj oferty",
+        "text": "Wszystkie oferty obok siebie, z rozpiętością cen na pierwszy rzut oka.",
+        "alt": "Szczegóły zlecenia Loqelo z pięcioma ofertami i wykresem rozpiętości cen"
+      },
+      "clientPanel": {
+        "title": "Twoje zlecenia",
+        "text": "Śledź wszystkie zlecenia i najnowsze zdarzenia w jednym miejscu.",
+        "alt": "Panel klienta Loqelo „Moje zlecenia”"
+      },
+      "providerJobs": {
+        "title": "Zlecenia dla Ciebie",
+        "text": "Zobacz na mapie zlecenia pasujące do Twoich usług, w Twoim promieniu.",
+        "alt": "Panel wykonawcy Loqelo „Zlecenia dla Ciebie” z mapą"
+      },
+      "providerOffer": {
+        "title": "Wyślij ofertę",
+        "text": "Wyślij przejrzystą ofertę z ceną, terminem i zakresem prac.",
+        "alt": "Strona zlecenia dla wykonawcy z formularzem „Wyślij najlepszą ofertę”"
+      },
+      "mobileHome": {
+        "title": "Opisz to w drodze",
+        "text": "To samo proste zgłoszenie na Twoim telefonie.",
+        "alt": "Mobilny ekran główny Loqelo"
+      },
+      "mobileOffers": {
+        "title": "Wybierz jednym dotknięciem",
+        "text": "Porównuj oferty i wybieraj wykonawcę z telefonu.",
+        "alt": "Mobilna lista ofert Loqelo"
+      },
+      "mobileMap": {
+        "title": "Zlecenia w pobliżu",
+        "text": "Wykonawcy widzą pobliskie zlecenia na mapie.",
+        "alt": "Mobilna mapa zleceń Loqelo dla wykonawców"
+      }
     }
   },
   "launch": {
@@ -182,9 +309,21 @@
     "month": "Luty",
     "year": "2027",
     "timeline": [
-      { "label": "Teraz", "title": "Lista oczekujących otwarta", "text": "Zapisz się jako klient lub jako wykonawca." },
-      { "label": "Przed startem", "title": "Informacje o projekcie", "text": "Okazjonalne wiadomości o platformie, kategoriach usług i miejscach, w których Loqelo będzie dostępne." },
-      { "label": "Luty 2027", "title": "Start", "text": "Loqelo rusza — damy Ci znać e-mailem." }
+      {
+        "label": "Teraz",
+        "title": "Lista oczekujących otwarta",
+        "text": "Zapisz się jako klient lub jako wykonawca."
+      },
+      {
+        "label": "Przed startem",
+        "title": "Informacje o projekcie",
+        "text": "Okazjonalne wiadomości o platformie, kategoriach usług i miejscach, w których Loqelo będzie dostępne."
+      },
+      {
+        "label": "Luty 2027",
+        "title": "Start",
+        "text": "Loqelo rusza — damy Ci znać e-mailem."
+      }
     ],
     "cta": "Zapisz się"
   },
@@ -193,8 +332,14 @@
     "title": "Dołącz przed startem.",
     "lead": "Wybierz, jak chcesz korzystać z Loqelo. Zajmie to mniej niż minutę.",
     "chooseLabel": "Chcę dołączyć jako",
-    "customer": { "title": "Szukam usług", "text": "Dla mojego domu, ogrodu lub biura" },
-    "provider": { "title": "Świadczę usługi", "text": "Jako wykonawca lub firma usługowa" },
+    "customer": {
+      "title": "Szukam usług",
+      "text": "Dla mojego domu, ogrodu lub biura"
+    },
+    "provider": {
+      "title": "Świadczę usługi",
+      "text": "Jako wykonawca lub firma usługowa"
+    },
     "fields": {
       "email": "Adres e-mail",
       "emailPlaceholder": "imie@przyklad.pl",
@@ -241,12 +386,30 @@
     "eyebrow": "FAQ",
     "title": "Pytania i odpowiedzi",
     "items": [
-      { "q": "Kiedy wystartuje Loqelo?", "a": "Start Loqelo planowany jest na luty 2027. Każda osoba z listy oczekujących otrzyma e-mail, gdy platforma ruszy." },
-      { "q": "Co się dzieje po zapisaniu się na listę?", "a": "Będziesz otrzymywać e-mailem informacje o starcie i okazjonalne wiadomości o projekcie. Zapis do niczego nie zobowiązuje, a wypisać się możesz w każdej chwili jednym kliknięciem." },
-      { "q": "Czy zapis na listę jest bezpłatny?", "a": "Tak. Zapis na listę oczekujących jest całkowicie bezpłatny." },
-      { "q": "Jakie usługi obejmie Loqelo?", "a": "Usługi dla domu, ogrodu i biura — od sprzątania i napraw po ogrodnictwo, instalacje i przeprowadzki. Pełną listę kategorii ogłosimy przed startem." },
-      { "q": "W jakich krajach będzie dostępne Loqelo?", "a": "Zbieramy zainteresowanie klientów i wykonawców z wielu krajów. Lokalizacje startu ogłosimy przed startem." },
-      { "q": "Jestem wykonawcą. Czy mogę zapisać się już teraz?", "a": "Tak. Wybierz w formularzu „Świadczę usługi” i wskaż kraj, w którym pracujesz. Przed startem prześlemy Ci informacje dla wykonawców." }
+      {
+        "q": "Kiedy wystartuje Loqelo?",
+        "a": "Start Loqelo planowany jest na luty 2027. Każda osoba z listy oczekujących otrzyma e-mail, gdy platforma ruszy."
+      },
+      {
+        "q": "Co się dzieje po zapisaniu się na listę?",
+        "a": "Będziesz otrzymywać e-mailem informacje o starcie i okazjonalne wiadomości o projekcie. Zapis do niczego nie zobowiązuje, a wypisać się możesz w każdej chwili jednym kliknięciem."
+      },
+      {
+        "q": "Czy zapis na listę jest bezpłatny?",
+        "a": "Tak. Zapis na listę oczekujących jest całkowicie bezpłatny."
+      },
+      {
+        "q": "Jakie usługi obejmie Loqelo?",
+        "a": "Usługi dla domu, ogrodu i biura — od sprzątania i napraw po ogrodnictwo, instalacje i przeprowadzki. Pełną listę kategorii ogłosimy przed startem."
+      },
+      {
+        "q": "W jakich krajach będzie dostępne Loqelo?",
+        "a": "Zbieramy zainteresowanie klientów i wykonawców z wielu krajów. Lokalizacje startu ogłosimy przed startem."
+      },
+      {
+        "q": "Jestem wykonawcą. Czy mogę zapisać się już teraz?",
+        "a": "Tak. Wybierz w formularzu „Świadczę usługi” i wskaż kraj, w którym pracujesz. Przed startem prześlemy Ci informacje dla wykonawców."
+      }
     ]
   },
   "finalCta": {

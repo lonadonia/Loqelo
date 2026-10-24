@@ -35,15 +35,18 @@
     "ctaCustomerHint": "Join as a customer",
     "ctaProvider": "I offer services",
     "ctaProviderHint": "Join as a provider",
-    "note": "Free to join · Launch news only · Unsubscribe anytime",
+    "trust": [
+      "Free to join",
+      "Launch news only",
+      "Unsubscribe anytime"
+    ],
+    "providerPrompt": "Offer services?",
     "demo": {
       "label": "What do you need?",
       "anyLanguage": "Any language",
       "found": "We found {count} services",
-      "cta": "Get offers",
+      "cta": "Join the waitlist",
       "preview": "Platform preview",
-      "pause": "Pause the demo",
-      "play": "Play the demo",
       "places": [
         "Home",
         "Garden",
@@ -71,7 +74,10 @@
             {
               "text": "."
             }
-          ]
+          ],
+          "city": "Amsterdam",
+          "detailLabel": "Window cleaning",
+          "detail": "12 windows, both sides"
         },
         {
           "segments": [
@@ -94,7 +100,10 @@
             {
               "text": " this week?"
             }
-          ]
+          ],
+          "city": "Amstelveen",
+          "detailLabel": "Hedge trimming",
+          "detail": "18 m hedge, back garden"
         },
         {
           "segments": [
@@ -117,10 +126,20 @@
             {
               "text": "."
             }
-          ]
+          ],
+          "city": "Utrecht",
+          "detailLabel": "Electrical work",
+          "detail": "6 ceiling lights, open office"
         }
       ],
-      "recognising": "Recognising services…"
+      "recognising": "Recognising services…",
+      "speak": "Speak",
+      "add": "Add"
+    },
+    "offersCard": {
+      "label": "Next step",
+      "title": "Offers from local pros",
+      "meta": "Price · timing · rating"
     }
   },
   "intro": {
@@ -217,7 +236,8 @@
     "text": "A short film about how Loqelo will connect people with the right local pros — for the home, the garden and the office.",
     "play": "Play the Loqelo video",
     "duration": "1:22",
-    "label": "Loqelo promotional video"
+    "label": "Loqelo promotional video",
+    "unmute": "Turn sound on"
   },
   "preview": {
     "eyebrow": "Platform preview",

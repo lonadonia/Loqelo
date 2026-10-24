@@ -35,16 +35,19 @@
     "ctaCustomerHint": "S’inscrire comme client",
     "ctaProvider": "Je propose des services",
     "ctaProviderHint": "S’inscrire comme prestataire",
-    "note": "Inscription gratuite · Uniquement les nouvelles du lancement · Désinscription à tout moment",
+    "trust": [
+      "Inscription gratuite",
+      "Uniquement les nouvelles du lancement",
+      "Désinscription à tout moment"
+    ],
+    "providerPrompt": "Vous proposez des services ?",
     "demo": {
       "label": "De quoi avez-vous besoin ?",
       "anyLanguage": "Dans toutes les langues",
       "found": "{count} services identifiés",
       "recognising": "Identification des services…",
-      "cta": "Recevoir des offres",
+      "cta": "Rejoindre la liste",
       "preview": "Aperçu de la plateforme",
-      "pause": "Mettre la démo en pause",
-      "play": "Lire la démo",
       "places": [
         "Maison",
         "Jardin",
@@ -72,7 +75,10 @@
             {
               "text": "."
             }
-          ]
+          ],
+          "city": "Amsterdam",
+          "detailLabel": "Nettoyage de vitres",
+          "detail": "12 fenêtres, des deux côtés"
         },
         {
           "segments": [
@@ -95,7 +101,10 @@
             {
               "text": " cette semaine ?"
             }
-          ]
+          ],
+          "city": "Amstelveen",
+          "detailLabel": "Taille de haies",
+          "detail": "Haie de 18 m, jardin arrière"
         },
         {
           "segments": [
@@ -118,9 +127,19 @@
             {
               "text": "."
             }
-          ]
+          ],
+          "city": "Utrecht",
+          "detailLabel": "Électricité",
+          "detail": "6 plafonniers, open space"
         }
-      ]
+      ],
+      "speak": "Dicter",
+      "add": "Ajouter"
+    },
+    "offersCard": {
+      "label": "Étape suivante",
+      "title": "Offres de pros locaux",
+      "meta": "Prix · délai · note"
     }
   },
   "intro": {
@@ -217,7 +236,8 @@
     "text": "Un court film sur la façon dont Loqelo mettra les gens en relation avec les bons professionnels locaux — pour la maison, le jardin et le bureau.",
     "play": "Lire la vidéo Loqelo",
     "duration": "1:22",
-    "label": "Vidéo de présentation de Loqelo"
+    "label": "Vidéo de présentation de Loqelo",
+    "unmute": "Activer le son"
   },
   "preview": {
     "eyebrow": "Aperçu de la plateforme",
