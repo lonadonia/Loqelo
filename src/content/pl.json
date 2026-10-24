@@ -1,0 +1,333 @@
+{
+  "meta": {
+    "title": "Loqelo — Everything your place needs. Start w lutym 2027",
+    "description": "Loqelo połączy Cię z lokalnymi wykonawcami usług dla domu, ogrodu i biura. Opisz, czego potrzebujesz, otrzymaj oferty i wybierz. Zapisz się na listę oczekujących przed startem w lutym 2027.",
+    "ogAlt": "Loqelo — Everything your place needs. Start w lutym 2027.",
+    "privacyTitle": "Polityka prywatności — Loqelo",
+    "privacyDescription": "Jak Loqelo przetwarza Twoje dane, gdy zapisujesz się na listę oczekujących lub odwiedzasz loqelo.com."
+  },
+  "nav": {
+    "skip": "Przejdź do treści",
+    "home": "Loqelo — strona główna",
+    "main": "Główna nawigacja",
+    "howItWorks": "Jak to działa",
+    "preview": "Podgląd",
+    "providers": "Dla wykonawców",
+    "launch": "Start",
+    "join": "Zapisz się",
+    "joinShort": "Zapisz się",
+    "language": "Język",
+    "chooseLanguage": "Wybierz język",
+    "menu": "Otwórz menu",
+    "close": "Zamknij menu"
+  },
+  "langSuggest": {
+    "text": "Ta strona jest dostępna także po polsku.",
+    "switch": "Przełącz na polski",
+    "dismiss": "Zamknij"
+  },
+  "hero": {
+    "badge": "Start w lutym 2027",
+    "tagline": "Everything your place needs.",
+    "taglineTranslation": "Wszystko, czego potrzebuje Twoje miejsce.",
+    "lead": "Loqelo to nowa platforma, która połączy Cię z lokalnymi wykonawcami usług dla domu, ogrodu i biura. Opisz własnymi słowami, czego potrzebujesz, otrzymaj oferty i wybierz, kto wykona zlecenie.",
+    "ctaCustomer": "Szukam usług",
+    "ctaCustomerHint": "Dołącz jako klient",
+    "ctaProvider": "Oferuję usługi",
+    "ctaProviderHint": "Dołącz jako wykonawca",
+    "note": "Bezpłatnie · Tylko informacje o starcie · Wypisz się w każdej chwili",
+    "demo": {
+      "label": "Czego potrzebujesz?",
+      "anyLanguage": "W dowolnym języku",
+      "found": "Znaleźliśmy usługi: {count}",
+      "recognising": "Rozpoznajemy usługi…",
+      "cta": "Otrzymaj oferty",
+      "preview": "Podgląd platformy",
+      "pause": "Zatrzymaj demo",
+      "play": "Odtwórz demo",
+      "places": ["Dom", "Ogród", "Biuro"],
+      "scenarios": [
+        {
+          "segments": [
+            { "text": "Potrzebuję " },
+            { "text": "posprzątać dom", "service": "Sprzątanie", "tone": "mint" },
+            { "text": " i " },
+            { "text": "umyć okna", "service": "Mycie okien", "tone": "blue" },
+            { "text": "." }
+          ]
+        },
+        {
+          "segments": [
+            { "text": "Czy ktoś może " },
+            { "text": "przyciąć żywopłot", "service": "Przycinanie żywopłotu", "tone": "mint" },
+            { "text": " i " },
+            { "text": "skosić trawnik", "service": "Pielęgnacja trawnika", "tone": "amber" },
+            { "text": " w tym tygodniu?" }
+          ]
+        },
+        {
+          "segments": [
+            { "text": "W biurze potrzebujemy " },
+            { "text": "nowych lamp sufitowych", "service": "Prace elektryczne", "tone": "blue" },
+            { "text": " i " },
+            { "text": "gruntownego sprzątania", "service": "Sprzątanie biur", "tone": "mint" },
+            { "text": "." }
+          ]
+        }
+      ]
+    }
+  },
+  "intro": {
+    "eyebrow": "Czym jest Loqelo",
+    "title": "Jedno miejsce na wszystko, czego potrzebuje Twoje miejsce.",
+    "body": "Od cieknącego kranu po metamorfozę ogrodu — Loqelo połączy osoby, które potrzebują pomocy, z lokalnymi fachowcami, którzy ją zapewnią. Jedno proste zgłoszenie zamiast niekończącego się szukania, dzwonienia i porównywania.",
+    "places": [
+      { "key": "home", "title": "Dom", "text": "Sprzątanie, naprawy, instalacje, remonty i przeprowadzki." },
+      { "key": "garden", "title": "Ogród", "text": "Trawniki, żywopłoty i drzewa, nawadnianie oraz prace na zewnątrz." },
+      { "key": "office", "title": "Biuro", "text": "Sprzątanie biur, konserwacja, elektryka i aranżacja wnętrz." }
+    ],
+    "moreLabel": "Planowane kategorie to m.in.",
+    "categories": ["Dom", "Ogród", "Budowa", "Instalacje", "Zwierzęta", "Pojazdy", "Usługi osobiste", "Przeprowadzki i transport"]
+  },
+  "audiences": {
+    "customers": {
+      "eyebrow": "Dla klientów",
+      "title": "Potrzebujesz pomocy? Opisz to raz.",
+      "text": "Powiedz Loqelo własnymi słowami, czego potrzebujesz. Lokalni wykonawcy przyślą Ci oferty, a Ty wybierzesz najlepszą.",
+      "points": [
+        "Opisz zlecenie w jednym zdaniu — dodaj zdjęcia, jeśli to pomoże",
+        "Porównuj oferty pod kątem ceny, terminu i ocen",
+        "Twoje dane kontaktowe pozostają prywatne, dopóki nie wybierzesz"
+      ],
+      "cta": "Dołącz jako klient",
+      "imageAlt": "Kobieta w domu planuje zlecenie na laptopie"
+    },
+    "providers": {
+      "eyebrow": "Dla wykonawców",
+      "title": "Chcesz więcej zleceń? Niech same do Ciebie trafiają.",
+      "text": "Otrzymuj zlecenia dopasowane do Twoich usług i obszaru działania, a ofertę wyślesz w około minutę.",
+      "points": [
+        "Zlecenia dopasowane do Twoich usług i promienia działania",
+        "Szczegóły, zdjęcia i przybliżona lokalizacja przed złożeniem oferty",
+        "Odpowiadaj na pytania klientów w jednym miejscu"
+      ],
+      "cta": "Dołącz jako wykonawca",
+      "imageAlt": "Technik podczas pracy przy urządzeniu chłodniczym"
+    }
+  },
+  "how": {
+    "eyebrow": "Jak działa Loqelo",
+    "title": "Od jednego zdania do właściwego fachowca.",
+    "lead": "Cztery proste kroki — od opisania potrzeby do wyboru wykonawcy.",
+    "steps": [
+      {
+        "title": "Opisz, czego potrzebujesz",
+        "text": "Napisz własnymi słowami lub podyktuj. Dodaj zdjęcia albo wideo, jeśli to pomoże — Loqelo rozpozna potrzebne usługi.",
+        "alt": "Ekran Loqelo „Dodaj zlecenie” z opisem zlecenia i rozpoznanymi usługami"
+      },
+      {
+        "title": "Dopasowanie",
+        "text": "Loqelo ustala, czego wymaga zlecenie, i informuje o nim odpowiednich wykonawców z Twojej okolicy.",
+        "alt": "Ekran wykonawcy Loqelo z dopasowanymi zleceniami na mapie w wybranym promieniu"
+      },
+      {
+        "title": "Otrzymaj oferty",
+        "text": "Wykonawcy przesyłają oferty z ceną i terminem. Pytania są publiczne, więc odpowiadasz tylko raz.",
+        "alt": "Ekran ofert Loqelo porównujący pięć ofert z wykresem rozpiętości cen"
+      },
+      {
+        "title": "Wybierz wykonawcę",
+        "text": "Porównaj cenę, termin i oceny obok siebie, a potem wybierz wykonawcę, który najbardziej Ci odpowiada.",
+        "alt": "Mobilny ekran Loqelo z listą ofert i przyciskiem Wybierz"
+      }
+    ],
+    "stepLabel": "Krok {n}",
+    "note": "Podgląd projektu przyszłej platformy · przykładowe dane"
+  },
+  "video": {
+    "eyebrow": "Obejrzyj",
+    "title": "Zobacz Loqelo w akcji.",
+    "text": "Krótki film o tym, jak Loqelo połączy ludzi z właściwymi lokalnymi fachowcami — w domu, w ogrodzie i w biurze.",
+    "play": "Odtwórz film Loqelo",
+    "duration": "1:22",
+    "label": "Film promocyjny Loqelo"
+  },
+  "preview": {
+    "eyebrow": "Podgląd platformy",
+    "title": "Pierwsze spojrzenie na platformę.",
+    "lead": "Zaprojektowana dla obu stron zlecenia: prosta dla klientów, wydajna dla wykonawców. To podglądy projektu platformy, która wystartuje w lutym 2027.",
+    "tabs": { "customers": "Dla klientów", "providers": "Dla wykonawców", "mobile": "Mobilnie" },
+    "tabsLabel": "Wybierz podgląd",
+    "sample": "Podgląd projektu · przykładowe dane",
+    "enlarge": "Powiększ ekran",
+    "close": "Zamknij",
+    "previous": "Poprzedni ekran",
+    "next": "Następny ekran",
+    "items": {
+      "home": { "title": "Opisz to", "text": "Napisz własnymi słowami, czego potrzebujesz; Loqelo znajdzie pasujące usługi.", "alt": "Ekran główny Loqelo z polem „Czego potrzebujesz? Opisz to.”" },
+      "postJob": { "title": "Dodaj zlecenie", "text": "Dodaj zlecenie w około dwie minuty — ze zdjęciami, lokalizacją i preferowaną datą.", "alt": "Formularz Loqelo „Dodaj zlecenie”" },
+      "offers": { "title": "Porównaj oferty", "text": "Wszystkie oferty obok siebie, z rozpiętością cen na pierwszy rzut oka.", "alt": "Szczegóły zlecenia Loqelo z pięcioma ofertami i wykresem rozpiętości cen" },
+      "clientPanel": { "title": "Twoje zlecenia", "text": "Śledź wszystkie zlecenia i najnowsze zdarzenia w jednym miejscu.", "alt": "Panel klienta Loqelo „Moje zlecenia”" },
+      "providerJobs": { "title": "Zlecenia dla Ciebie", "text": "Zobacz na mapie zlecenia pasujące do Twoich usług, w Twoim promieniu.", "alt": "Panel wykonawcy Loqelo „Zlecenia dla Ciebie” z mapą" },
+      "providerOffer": { "title": "Wyślij ofertę", "text": "Wyślij przejrzystą ofertę z ceną, terminem i zakresem prac.", "alt": "Strona zlecenia dla wykonawcy z formularzem „Wyślij najlepszą ofertę”" },
+      "mobileHome": { "title": "Opisz to w drodze", "text": "To samo proste zgłoszenie na Twoim telefonie.", "alt": "Mobilny ekran główny Loqelo" },
+      "mobileOffers": { "title": "Wybierz jednym dotknięciem", "text": "Porównuj oferty i wybieraj wykonawcę z telefonu.", "alt": "Mobilna lista ofert Loqelo" },
+      "mobileMap": { "title": "Zlecenia w pobliżu", "text": "Wykonawcy widzą pobliskie zlecenia na mapie.", "alt": "Mobilna mapa zleceń Loqelo dla wykonawców" }
+    }
+  },
+  "launch": {
+    "eyebrow": "Start",
+    "title": "Startujemy w lutym 2027.",
+    "text": "Loqelo przygotowuje się do startu w lutym 2027. Zapisz się teraz na listę oczekujących, a będziemy Cię informować na bieżąco — wyłącznie o starcie i postępach projektu.",
+    "month": "Luty",
+    "year": "2027",
+    "timeline": [
+      { "label": "Teraz", "title": "Lista oczekujących otwarta", "text": "Zapisz się jako klient lub jako wykonawca." },
+      { "label": "Przed startem", "title": "Informacje o projekcie", "text": "Okazjonalne wiadomości o platformie, kategoriach usług i miejscach, w których Loqelo będzie dostępne." },
+      { "label": "Luty 2027", "title": "Start", "text": "Loqelo rusza — damy Ci znać e-mailem." }
+    ],
+    "cta": "Zapisz się"
+  },
+  "waitlist": {
+    "eyebrow": "Lista oczekujących",
+    "title": "Dołącz przed startem.",
+    "lead": "Wybierz, jak chcesz korzystać z Loqelo. Zajmie to mniej niż minutę.",
+    "chooseLabel": "Chcę dołączyć jako",
+    "customer": { "title": "Szukam usług", "text": "Dla mojego domu, ogrodu lub biura" },
+    "provider": { "title": "Świadczę usługi", "text": "Jako wykonawca lub firma usługowa" },
+    "fields": {
+      "email": "Adres e-mail",
+      "emailPlaceholder": "imie@przyklad.pl",
+      "countryCustomer": "Kraj zamieszkania",
+      "countryProvider": "Kraj, w którym świadczysz usługi",
+      "countryPlaceholder": "Wybierz kraj",
+      "suggested": "Sugerowane",
+      "allCountries": "Wszystkie kraje",
+      "typeLegend": "Zapisuję się jako",
+      "optional": "opcjonalnie",
+      "individual": "Osoba prywatna",
+      "business": "Firma",
+      "clear": "Wyczyść wybór"
+    },
+    "consent": "Wyrażam zgodę na otrzymywanie od Loqelo e-maili o starcie i postępach projektu. Mogę wypisać się w każdej chwili. Szczegóły w {privacy}.",
+    "consentLink": "Polityce prywatności",
+    "submitCustomer": "Dołącz do listy klientów",
+    "submitProvider": "Dołącz do listy wykonawców",
+    "submitting": "Zapisywanie…",
+    "privacyNote": "Twój e-mail wykorzystamy wyłącznie do informacji o starcie i projekcie. Zero spamu.",
+    "errors": {
+      "emailRequired": "Podaj adres e-mail.",
+      "emailInvalid": "Podaj prawidłowy adres e-mail, np. imie@przyklad.pl.",
+      "countryRequired": "Wybierz kraj.",
+      "consentRequired": "Zaznacz pole, aby wyrazić zgodę na informacje o starcie.",
+      "summary": "Sprawdź zaznaczone pola.",
+      "server": "Coś poszło nie tak po naszej stronie. Spróbuj ponownie za chwilę.",
+      "network": "Nie udało się połączyć z serwerem. Sprawdź połączenie i spróbuj ponownie.",
+      "rateLimited": "Zbyt wiele prób. Odczekaj kilka minut i spróbuj ponownie.",
+      "spam": "Nie udało się zweryfikować zgłoszenia. Spróbuj ponownie.",
+      "unavailable": "Zapisy są chwilowo niedostępne. Spróbuj ponownie później."
+    },
+    "success": {
+      "customerTitle": "Jesteś na liście!",
+      "customerText": "Dziękujemy za zapis. Wyślemy Ci e-mail z informacjami o starcie, gdy Loqelo będzie gotowe na luty 2027.",
+      "providerTitle": "Jesteś na liście wykonawców!",
+      "providerText": "Dziękujemy za zapis. Napiszemy do Ciebie o starcie i o tym, jak zacząć jako wykonawca.",
+      "confirmTitle": "Prawie gotowe — sprawdź skrzynkę.",
+      "confirmText": "Wysłaliśmy Ci e-mail. Kliknij link w wiadomości, aby potwierdzić zapis.",
+      "again": "Zapisz inny adres e-mail"
+    }
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Pytania i odpowiedzi",
+    "items": [
+      { "q": "Kiedy wystartuje Loqelo?", "a": "Start Loqelo planowany jest na luty 2027. Każda osoba z listy oczekujących otrzyma e-mail, gdy platforma ruszy." },
+      { "q": "Co się dzieje po zapisaniu się na listę?", "a": "Będziesz otrzymywać e-mailem informacje o starcie i okazjonalne wiadomości o projekcie. Zapis do niczego nie zobowiązuje, a wypisać się możesz w każdej chwili jednym kliknięciem." },
+      { "q": "Czy zapis na listę jest bezpłatny?", "a": "Tak. Zapis na listę oczekujących jest całkowicie bezpłatny." },
+      { "q": "Jakie usługi obejmie Loqelo?", "a": "Usługi dla domu, ogrodu i biura — od sprzątania i napraw po ogrodnictwo, instalacje i przeprowadzki. Pełną listę kategorii ogłosimy przed startem." },
+      { "q": "W jakich krajach będzie dostępne Loqelo?", "a": "Zbieramy zainteresowanie klientów i wykonawców z wielu krajów. Lokalizacje startu ogłosimy przed startem." },
+      { "q": "Jestem wykonawcą. Czy mogę zapisać się już teraz?", "a": "Tak. Wybierz w formularzu „Świadczę usługi” i wskaż kraj, w którym pracujesz. Przed startem prześlemy Ci informacje dla wykonawców." }
+    ]
+  },
+  "finalCta": {
+    "title": "Bądź pierwszy w kolejce.",
+    "text": "Loqelo startuje w lutym 2027. Zapisz się na listę oczekujących, a damy Ci znać, gdy platforma ruszy.",
+    "customer": "Szukam usług",
+    "provider": "Oferuję usługi"
+  },
+  "footer": {
+    "about": "Platforma łącząca klientów z wykonawcami usług dla domu, ogrodu i biura. Start w lutym 2027.",
+    "privacy": "Polityka prywatności",
+    "cookies": "Ustawienia plików cookie",
+    "contact": "Kontakt",
+    "rights": "Wszelkie prawa zastrzeżone.",
+    "places": "Dom · Ogród · Biuro",
+    "navLabel": "Stopka",
+    "languages": "Języki"
+  },
+  "consent": {
+    "title": "Twoja prywatność",
+    "text": "Za Twoją zgodą korzystamy z Google Analytics, aby liczyć odwiedziny i sprawdzać, z jakich krajów pochodzą odwiedzający. Twój adres e-mail i odpowiedzi z formularza nigdy nie trafiają do narzędzi analitycznych.",
+    "accept": "Akceptuję analitykę",
+    "decline": "Odrzuć",
+    "more": "Polityka prywatności"
+  },
+  "notFound": {
+    "title": "Nie znaleziono strony",
+    "text": "Strona, której szukasz, nie istnieje.",
+    "back": "Wróć na stronę główną"
+  },
+  "privacy": {
+    "title": "Polityka prywatności",
+    "draft": "Wersja robocza do weryfikacji — przed publikacją klient musi zatwierdzić tekst i uzupełnić dane firmy.",
+    "updated": "Ostatnia aktualizacja: 24 października 2026",
+    "toConfirm": "do uzupełnienia",
+    "back": "Wróć na stronę główną",
+    "sections": [
+      {
+        "heading": "Kim jesteśmy",
+        "paragraphs": [
+          "Ta strona jest prowadzona przez Loqelo („my”). Administratorem Twoich danych jest: {controller}.",
+          "Pytania dotyczące Twoich danych: {email}."
+        ]
+      },
+      {
+        "heading": "Jakie dane zbieramy przy zapisie na listę",
+        "paragraphs": [
+          "Twój adres e-mail; wybrany kraj; informację, czy zapisujesz się jako klient, czy jako wykonawca; czy jesteś osobą prywatną, czy firmą (tylko jeśli zdecydujesz się to podać); język strony; a także datę, godzinę i wersję zaakceptowanej treści zgody."
+        ]
+      },
+      {
+        "heading": "W jakim celu",
+        "paragraphs": [
+          "Aby wysyłać Ci zamówione informacje o starcie i postępach projektu Loqelo. Podstawą prawną jest Twoja zgoda (art. 6 ust. 1 lit. a RODO). Analizujemy też dane zbiorcze — np. liczbę zapisów w poszczególnych krajach — aby zaplanować start."
+        ]
+      },
+      {
+        "heading": "Z jakich usługodawców korzystamy",
+        "paragraphs": [
+          "Kontakty z listy oczekujących są przechowywane w Brevo (Sendinblue SAS, Francja) — naszym narzędziu do e-maili i zarządzania kontaktami. Strona jest hostowana przez Vercel Inc. Cloudflare Turnstile chroni formularze przed spamem. Google Analytics 4 (Google Ireland Ltd.) działa wyłącznie, jeśli zaakceptujesz analitykę. Każdy z tych podmiotów przetwarza dane w naszym imieniu na podstawie umowy powierzenia przetwarzania danych."
+        ]
+      },
+      {
+        "heading": "Analityka i pliki cookie",
+        "paragraphs": [
+          "Google Analytics wczytujemy dopiero po Twojej zgodzie. Narzędzie korzysta z plików cookie, aby liczyć odwiedziny, i pokazuje nam przybliżony kraj odwiedzających. Funkcje reklamowe i Google Signals są wyłączone. Nigdy nie przekazujemy do Google Analytics Twojego adresu e-mail ani odpowiedzi z formularza.",
+          "W Twojej przeglądarce zapisujemy też wybór języka i decyzję dotyczącą analityki, aby strona działała zgodnie z oczekiwaniami. Decyzję dotyczącą analityki możesz zmienić w każdej chwili w „Ustawieniach plików cookie” na dole każdej strony."
+        ]
+      },
+      {
+        "heading": "Jak długo przechowujemy dane",
+        "paragraphs": [
+          "Do momentu wypisania się lub prośby o usunięcie danych albo do czasu, gdy lista oczekujących przestanie być potrzebna po starcie — w zależności od tego, co nastąpi wcześniej."
+        ]
+      },
+      {
+        "heading": "Twoje prawa",
+        "paragraphs": [
+          "Masz prawo dostępu do swoich danych, ich sprostowania, przeniesienia lub usunięcia oraz wycofania zgody w dowolnym momencie — każdy e-mail zawiera link do wypisania się. Przysługuje Ci także prawo wniesienia skargi do organu ochrony danych (w Polsce: Prezes UODO)."
+        ]
+      }
+    ]
+  }
+}

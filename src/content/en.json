@@ -1,0 +1,476 @@
+{
+  "meta": {
+    "title": "Loqelo — Everything your place needs. Launching February 2027",
+    "description": "Loqelo connects you with local service providers for your home, garden and office. Describe what you need, get matched, receive offers and choose. Join the waitlist before the February 2027 launch.",
+    "ogAlt": "Loqelo — Everything your place needs. Launching February 2027.",
+    "privacyTitle": "Privacy Policy — Loqelo",
+    "privacyDescription": "How Loqelo handles your data when you join the waitlist or visit loqelo.com."
+  },
+  "nav": {
+    "skip": "Skip to main content",
+    "home": "Loqelo home",
+    "main": "Main",
+    "howItWorks": "How it works",
+    "preview": "Preview",
+    "providers": "For providers",
+    "launch": "Launch",
+    "join": "Join the waitlist",
+    "joinShort": "Join",
+    "language": "Language",
+    "chooseLanguage": "Choose language",
+    "menu": "Open menu",
+    "close": "Close menu"
+  },
+  "langSuggest": {
+    "text": "This page is also available in English.",
+    "switch": "Switch to English",
+    "dismiss": "Dismiss"
+  },
+  "hero": {
+    "badge": "Launching February 2027",
+    "tagline": "Everything your place needs.",
+    "taglineTranslation": "",
+    "lead": "Loqelo is a new platform that connects you with local service providers for your home, garden and office. Describe what you need in your own words, receive offers and choose who does the job.",
+    "ctaCustomer": "I need services",
+    "ctaCustomerHint": "Join as a customer",
+    "ctaProvider": "I offer services",
+    "ctaProviderHint": "Join as a provider",
+    "note": "Free to join · Launch news only · Unsubscribe anytime",
+    "demo": {
+      "label": "What do you need?",
+      "anyLanguage": "Any language",
+      "found": "We found {count} services",
+      "cta": "Get offers",
+      "preview": "Platform preview",
+      "pause": "Pause the demo",
+      "play": "Play the demo",
+      "places": [
+        "Home",
+        "Garden",
+        "Office"
+      ],
+      "scenarios": [
+        {
+          "segments": [
+            {
+              "text": "I need to "
+            },
+            {
+              "text": "clean my house",
+              "service": "Cleaning",
+              "tone": "mint"
+            },
+            {
+              "text": " and "
+            },
+            {
+              "text": "wash the windows",
+              "service": "Window cleaning",
+              "tone": "blue"
+            },
+            {
+              "text": "."
+            }
+          ]
+        },
+        {
+          "segments": [
+            {
+              "text": "Can someone "
+            },
+            {
+              "text": "trim the hedge",
+              "service": "Hedge trimming",
+              "tone": "mint"
+            },
+            {
+              "text": " and "
+            },
+            {
+              "text": "mow the lawn",
+              "service": "Lawn care",
+              "tone": "amber"
+            },
+            {
+              "text": " this week?"
+            }
+          ]
+        },
+        {
+          "segments": [
+            {
+              "text": "Our office needs "
+            },
+            {
+              "text": "new ceiling lights",
+              "service": "Electrical work",
+              "tone": "blue"
+            },
+            {
+              "text": " and a "
+            },
+            {
+              "text": "deep clean",
+              "service": "Office cleaning",
+              "tone": "mint"
+            },
+            {
+              "text": "."
+            }
+          ]
+        }
+      ],
+      "recognising": "Recognising services…"
+    }
+  },
+  "intro": {
+    "eyebrow": "What is Loqelo",
+    "title": "One place for all the work your place needs.",
+    "body": "From a dripping tap to a garden makeover, Loqelo will bring together people who need a job done and the local professionals who do it. One simple request replaces endless searching, calling and comparing.",
+    "places": [
+      {
+        "key": "home",
+        "title": "Home",
+        "text": "Cleaning, repairs, installations, renovation and moving."
+      },
+      {
+        "key": "garden",
+        "title": "Garden",
+        "text": "Lawn care, hedges and trees, irrigation and outdoor upkeep."
+      },
+      {
+        "key": "office",
+        "title": "Office",
+        "text": "Office cleaning, maintenance, electrics and fit-outs."
+      }
+    ],
+    "moreLabel": "Planned categories include",
+    "categories": [
+      "Home",
+      "Garden",
+      "Construction",
+      "Installations",
+      "Pets",
+      "Vehicles",
+      "Personal services",
+      "Moving & transport"
+    ]
+  },
+  "audiences": {
+    "customers": {
+      "eyebrow": "For customers",
+      "title": "Need a hand? Describe it once.",
+      "text": "Tell Loqelo what you need in your own words. Relevant local providers send you offers, and you choose the one that fits.",
+      "points": [
+        "Describe the job in a sentence — add photos if it helps",
+        "Compare offers by price, timing and rating",
+        "Your contact details stay private until you choose"
+      ],
+      "cta": "Join as a customer",
+      "imageAlt": "A woman at home planning a job on her laptop"
+    },
+    "providers": {
+      "eyebrow": "For service providers",
+      "title": "Need more jobs? Let them come to you.",
+      "text": "Receive job requests that match your services and the area you cover, and send a clear offer in about a minute.",
+      "points": [
+        "Jobs matched to your services and your radius",
+        "See details, photos and the approximate location before you bid",
+        "Answer client questions in one place"
+      ],
+      "cta": "Join as a provider",
+      "imageAlt": "A technician at work on a refrigeration unit"
+    }
+  },
+  "how": {
+    "eyebrow": "How Loqelo works",
+    "title": "From one sentence to the right pro.",
+    "lead": "Four simple steps, from describing your need to choosing who does the job.",
+    "steps": [
+      {
+        "title": "Describe your need",
+        "text": "Write what you need in your own words, or dictate it. Add photos or a video if it helps — Loqelo recognises the services involved.",
+        "alt": "Loqelo ‘Post a job’ screen with a job description and recognised services"
+      },
+      {
+        "title": "Get matched",
+        "text": "Loqelo works out what the job needs and lets relevant service providers in your area know about it.",
+        "alt": "Loqelo provider screen showing matching jobs on a map within a set radius"
+      },
+      {
+        "title": "Receive offers",
+        "text": "Providers send offers with their price and timing. Questions are answered publicly, so you only answer once.",
+        "alt": "Loqelo offers screen comparing five offers with a price range chart"
+      },
+      {
+        "title": "Choose your provider",
+        "text": "Compare price, timing and ratings side by side, then select the provider who suits you best.",
+        "alt": "Loqelo mobile screen listing offers with a Select button"
+      }
+    ],
+    "stepLabel": "Step {n}",
+    "note": "Design preview of the upcoming platform · sample data"
+  },
+  "video": {
+    "eyebrow": "Watch",
+    "title": "See Loqelo in action.",
+    "text": "A short film about how Loqelo will connect people with the right local pros — for the home, the garden and the office.",
+    "play": "Play the Loqelo video",
+    "duration": "1:22",
+    "label": "Loqelo promotional video"
+  },
+  "preview": {
+    "eyebrow": "Platform preview",
+    "title": "A first look at the platform.",
+    "lead": "Designed for both sides of the job: simple for customers, efficient for providers. These are design previews of the platform launching in February 2027.",
+    "tabs": {
+      "customers": "For customers",
+      "providers": "For providers",
+      "mobile": "On mobile"
+    },
+    "tabsLabel": "Choose a preview",
+    "sample": "Design preview · sample data",
+    "enlarge": "Enlarge screen",
+    "close": "Close",
+    "previous": "Previous screen",
+    "next": "Next screen",
+    "items": {
+      "home": {
+        "title": "Describe it",
+        "text": "Write what you need in your own words; Loqelo finds the matching services.",
+        "alt": "Loqelo home screen with the ‘What do you need? Describe it.’ request box"
+      },
+      "postJob": {
+        "title": "Post a job",
+        "text": "Post a job in about two minutes, with photos, location and a preferred date.",
+        "alt": "Loqelo ‘Post a job’ form"
+      },
+      "offers": {
+        "title": "Compare offers",
+        "text": "See every offer side by side, with the price spread at a glance.",
+        "alt": "Loqelo job details with five offers and a price range chart"
+      },
+      "clientPanel": {
+        "title": "Your jobs",
+        "text": "Follow all your jobs and the latest activity in one place.",
+        "alt": "Loqelo customer dashboard ‘My jobs’"
+      },
+      "providerJobs": {
+        "title": "Jobs for you",
+        "text": "See requests that match your services on a map, within your radius.",
+        "alt": "Loqelo provider dashboard ‘Jobs for you’ with a map"
+      },
+      "providerOffer": {
+        "title": "Send your offer",
+        "text": "Send a clear offer with your price, timing and what's included.",
+        "alt": "Loqelo provider job page with the ‘Send your best offer’ form"
+      },
+      "mobileHome": {
+        "title": "Describe it on the go",
+        "text": "The same simple request on your phone.",
+        "alt": "Loqelo mobile home screen"
+      },
+      "mobileOffers": {
+        "title": "Choose in a tap",
+        "text": "Compare offers and select a provider from your phone.",
+        "alt": "Loqelo mobile offers list"
+      },
+      "mobileMap": {
+        "title": "Jobs near you",
+        "text": "Providers see nearby jobs on a map.",
+        "alt": "Loqelo mobile map of jobs for providers"
+      }
+    }
+  },
+  "launch": {
+    "eyebrow": "Launch",
+    "title": "Launching February 2027.",
+    "text": "Loqelo is getting ready to launch in February 2027. Join the waitlist now and we'll keep you posted as we get closer — with launch news and project updates only.",
+    "month": "February",
+    "year": "2027",
+    "timeline": [
+      {
+        "label": "Now",
+        "title": "Waitlist open",
+        "text": "Sign up as a customer or as a service provider."
+      },
+      {
+        "label": "Before launch",
+        "title": "Project updates",
+        "text": "Occasional news about the platform, the service categories and where Loqelo will be available."
+      },
+      {
+        "label": "February 2027",
+        "title": "Launch",
+        "text": "Loqelo opens — and we'll let you know by email."
+      }
+    ],
+    "cta": "Join the waitlist"
+  },
+  "waitlist": {
+    "eyebrow": "Waitlist",
+    "title": "Join before launch.",
+    "lead": "Choose how you'd like to use Loqelo. It takes less than a minute.",
+    "chooseLabel": "I want to join as",
+    "customer": {
+      "title": "I'm looking for services",
+      "text": "For my home, garden or office"
+    },
+    "provider": {
+      "title": "I provide services",
+      "text": "As a contractor or service business"
+    },
+    "fields": {
+      "email": "Email address",
+      "emailPlaceholder": "name@example.com",
+      "countryCustomer": "Country of residence",
+      "countryProvider": "Country where you provide services",
+      "countryPlaceholder": "Select a country",
+      "suggested": "Suggested",
+      "allCountries": "All countries",
+      "typeLegend": "I'm signing up as",
+      "optional": "optional",
+      "individual": "An individual",
+      "business": "A business",
+      "clear": "Clear choice"
+    },
+    "consent": "I agree to receive emails from Loqelo about the launch and project updates. I can unsubscribe at any time. Details in the {privacy}.",
+    "consentLink": "Privacy Policy",
+    "submitCustomer": "Join the customer waitlist",
+    "submitProvider": "Join the provider waitlist",
+    "submitting": "Joining…",
+    "privacyNote": "We only use your email for launch news and project updates. No spam, ever.",
+    "errors": {
+      "emailRequired": "Please enter your email address.",
+      "emailInvalid": "Please enter a valid email address, for example name@example.com.",
+      "countryRequired": "Please select a country.",
+      "consentRequired": "Please tick the box to agree to receive launch updates.",
+      "summary": "Please check the highlighted fields.",
+      "server": "Something went wrong on our side. Please try again in a moment.",
+      "network": "We couldn't reach the server. Please check your connection and try again.",
+      "rateLimited": "Too many attempts. Please wait a few minutes and try again.",
+      "spam": "We couldn't verify your submission. Please try again.",
+      "unavailable": "Sign-ups are temporarily unavailable. Please try again later."
+    },
+    "success": {
+      "customerTitle": "You're on the list!",
+      "customerText": "Thanks for joining. We'll email you with launch news as Loqelo gets ready for February 2027.",
+      "providerTitle": "You're on the provider list!",
+      "providerText": "Thanks for joining. We'll email you about the launch and about getting started as a provider.",
+      "confirmTitle": "Almost done — check your inbox.",
+      "confirmText": "We've sent you an email. Click the link inside to confirm your sign-up.",
+      "again": "Sign up another email"
+    }
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Questions & answers",
+    "items": [
+      {
+        "q": "When will Loqelo launch?",
+        "a": "Loqelo is planned to launch in February 2027. Everyone on the waitlist will receive an email when it opens."
+      },
+      {
+        "q": "What happens when I join the waitlist?",
+        "a": "You'll receive launch announcements and occasional project updates by email. There's no obligation, and you can unsubscribe at any time with one click."
+      },
+      {
+        "q": "Is joining the waitlist free?",
+        "a": "Yes. Joining the waitlist is completely free."
+      },
+      {
+        "q": "Which services will Loqelo cover?",
+        "a": "Services for the home, garden and office — from cleaning and repairs to gardening, installations and moving. The full list of categories will be announced before launch."
+      },
+      {
+        "q": "Which countries will Loqelo be available in?",
+        "a": "We're collecting interest from customers and service providers in many countries. Launch locations will be announced before launch."
+      },
+      {
+        "q": "I'm a service provider. Can I sign up now?",
+        "a": "Yes. Choose ‘I provide services’ in the form and select the country where you work. We'll send you updates for providers ahead of the launch."
+      }
+    ]
+  },
+  "finalCta": {
+    "title": "Be first in line.",
+    "text": "Loqelo launches in February 2027. Join the waitlist and we'll let you know when it opens.",
+    "customer": "I need services",
+    "provider": "I offer services"
+  },
+  "footer": {
+    "about": "A platform connecting customers with service providers for the home, garden and office. Launching February 2027.",
+    "privacy": "Privacy Policy",
+    "cookies": "Cookie settings",
+    "contact": "Contact",
+    "rights": "All rights reserved.",
+    "places": "Home · Garden · Office",
+    "navLabel": "Footer",
+    "languages": "Languages"
+  },
+  "consent": {
+    "title": "Your privacy",
+    "text": "With your permission, we use Google Analytics to count visits and see which countries our visitors come from. Your email address and form answers are never shared with analytics.",
+    "accept": "Accept analytics",
+    "decline": "Decline",
+    "more": "Privacy Policy"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "text": "The page you're looking for doesn't exist.",
+    "back": "Back to the homepage"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "draft": "Draft for review — the client must approve this text and add the company details before go-live.",
+    "updated": "Last updated: 24 October 2026",
+    "toConfirm": "to be confirmed",
+    "back": "Back to the homepage",
+    "sections": [
+      {
+        "heading": "Who we are",
+        "paragraphs": [
+          "This website is operated by Loqelo (“we”, “us”). The controller responsible for your data is: {controller}.",
+          "Questions about your data: {email}."
+        ]
+      },
+      {
+        "heading": "What we collect when you join the waitlist",
+        "paragraphs": [
+          "Your email address; the country you selected; whether you joined as a customer or as a service provider; whether you are an individual or a business (only if you chose to tell us); the language of the page; and the date, time and version of the consent text you accepted."
+        ]
+      },
+      {
+        "heading": "Why we use it",
+        "paragraphs": [
+          "To send you launch announcements and project updates about Loqelo, which you asked for. The legal basis is your consent (Art. 6(1)(a) GDPR). We also look at aggregated numbers — for example, sign-ups per country — to plan the launch."
+        ]
+      },
+      {
+        "heading": "Service providers we use",
+        "paragraphs": [
+          "Waitlist contacts are stored in Brevo (Sendinblue SAS, France), our email and contact management provider. The website is hosted by Vercel Inc. Cloudflare Turnstile protects the forms against spam. Google Analytics 4 (Google Ireland Ltd.) is used only if you accept analytics. Each provider processes data on our behalf under a data processing agreement."
+        ]
+      },
+      {
+        "heading": "Analytics and cookies",
+        "paragraphs": [
+          "Google Analytics is only loaded after you accept it. It uses cookies to count visits and shows us the approximate country of visitors. Advertising features and Google signals are switched off. We never send your email address or form answers to Google Analytics.",
+          "We also store your language choice and your analytics choice in your browser so the site works as you expect. You can change your analytics choice at any time via “Cookie settings” at the bottom of every page."
+        ]
+      },
+      {
+        "heading": "How long we keep your data",
+        "paragraphs": [
+          "Until you unsubscribe or ask us to delete it, or until the waitlist is no longer needed after the launch — whichever comes first."
+        ]
+      },
+      {
+        "heading": "Your rights",
+        "paragraphs": [
+          "You can access, correct, export or delete your data, and withdraw your consent at any time — every email contains an unsubscribe link. You also have the right to lodge a complaint with your data protection authority."
+        ]
+      }
+    ]
+  }
+}

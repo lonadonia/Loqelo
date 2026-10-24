@@ -1,0 +1,253 @@
+@import 'tailwindcss';
+
+/* Loqelo design tokens — taken 1:1 from the client's UI kit (02 UI Kit/tokens.css). */
+@theme {
+  --color-ink: #0c2229;
+  --color-ink-2: #3d5259;
+  --color-mute: #76898e;
+  /* Text-safe variants (WCAG AA on bg/white/tints) of mute and mint-d. */
+  --color-subtle: #5a6c71;
+  --color-mint-ink: #1f7d5e;
+  --color-faint: #a7b5b8;
+  --color-line: #e4eae9;
+  --color-line-2: #eef2f1;
+  --color-bg: #f4f7f6;
+  --color-card: #ffffff;
+  --color-teal: #077e88;
+  --color-teal-d: #05626a;
+  --color-teal-50: #e7f3f3;
+  --color-teal-100: #cfe7e7;
+  --color-mint: #65c8a6;
+  --color-mint-50: #e9f7f1;
+  --color-mint-100: #cdeedf;
+  --color-mint-d: #2e9a77;
+  --color-deep: #031c26;
+  --color-amber: #e8912c;
+  --color-amber-50: #fdf1e2;
+  --color-blue: #0677ba;
+  --color-blue-50: #e6f1f8;
+  --color-red: #d2544b;
+  --color-red-50: #fbeae8;
+
+  --radius-s: 10px;
+  --radius-m: 14px;
+  --radius-l: 20px;
+  --radius-xl: 28px;
+
+  --shadow-1: 0 1px 2px rgba(12, 34, 41, 0.06), 0 1px 1px rgba(12, 34, 41, 0.04);
+  --shadow-2: 0 12px 32px -12px rgba(12, 34, 41, 0.18), 0 2px 6px rgba(12, 34, 41, 0.05);
+  --shadow-3: 0 30px 60px -20px rgba(3, 28, 38, 0.28), 0 6px 16px rgba(3, 28, 38, 0.08);
+
+  --font-display: var(--font-outfit), system-ui, sans-serif;
+  --font-sans: var(--font-dm-sans), system-ui, sans-serif;
+
+  --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
+  --animate-rise: rise 0.7s var(--ease-out-soft) both;
+
+  @keyframes lq-progress {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  @keyframes rise {
+    from {
+      opacity: 0;
+      transform: translateY(14px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 88px;
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    background: var(--color-bg);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 16px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+  }
+  p {
+    text-wrap: pretty;
+  }
+  :focus-visible {
+    outline: 3px solid var(--color-teal);
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+  .on-dark :focus-visible {
+    outline-color: var(--color-mint);
+  }
+  ::selection {
+    background: var(--color-mint-100);
+    color: var(--color-ink);
+  }
+}
+
+@layer components {
+  .container-page {
+    width: 100%;
+    max-width: 1240px;
+    margin-inline: auto;
+    padding-inline: 20px;
+  }
+  @media (min-width: 768px) {
+    .container-page {
+      padding-inline: 40px;
+    }
+  }
+
+  .eyebrow {
+    font-family: var(--font-sans);
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--color-teal-d);
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    min-height: 48px;
+    padding: 0 22px;
+    border-radius: 999px;
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: -0.005em;
+    transition:
+      background-color 0.2s,
+      color 0.2s,
+      box-shadow 0.25s,
+      transform 0.2s var(--ease-out-soft);
+    -webkit-tap-highlight-color: transparent;
+  }
+  .btn:active {
+    transform: translateY(1px) scale(0.99);
+  }
+  .btn-primary {
+    background: var(--color-teal);
+    color: #fff;
+    box-shadow: 0 10px 24px -10px rgba(7, 126, 136, 0.7);
+  }
+  .btn-primary:hover {
+    background: var(--color-teal-d);
+  }
+  .btn-dark {
+    background: var(--color-deep);
+    color: #fff;
+  }
+  .btn-dark:hover {
+    background: var(--color-ink);
+  }
+  .btn-ghost {
+    background: #fff;
+    color: var(--color-ink);
+    box-shadow: inset 0 0 0 1px var(--color-line);
+  }
+  .btn-ghost:hover {
+    box-shadow: inset 0 0 0 1px var(--color-faint);
+  }
+  .btn-mint {
+    background: var(--color-mint);
+    color: var(--color-deep);
+  }
+  .btn-mint:hover {
+    background: #7dd3b5;
+  }
+  .btn[disabled] {
+    opacity: 0.7;
+    cursor: progress;
+  }
+
+  .card {
+    background: var(--color-card);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-2);
+  }
+
+  .field-input {
+    width: 100%;
+    min-height: 52px;
+    padding: 0 16px;
+    border-radius: var(--radius-m);
+    border: 1px solid var(--color-line);
+    background: #fff;
+    color: var(--color-ink);
+    font-size: 16px;
+    transition:
+      border-color 0.2s,
+      box-shadow 0.2s;
+  }
+  .field-input::placeholder {
+    color: var(--color-faint);
+  }
+  .field-input:hover {
+    border-color: var(--color-faint);
+  }
+  .field-input:focus {
+    outline: none;
+    border-color: var(--color-teal);
+    box-shadow: 0 0 0 4px var(--color-teal-50);
+  }
+  .field-input[aria-invalid='true'] {
+    border-color: var(--color-red);
+    box-shadow: 0 0 0 4px var(--color-red-50);
+  }
+
+  /* Reveal-on-scroll: content is visible by default; JS opts elements in. */
+  .reveal-ready [data-reveal] {
+    opacity: 0;
+    transform: translateY(18px);
+    transition:
+      opacity 0.8s var(--ease-out-soft),
+      transform 0.8s var(--ease-out-soft);
+    transition-delay: var(--reveal-delay, 0ms);
+  }
+  .reveal-ready [data-reveal].is-visible {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .reveal-ready [data-reveal] {
+    opacity: 1;
+    transform: none;
+  }
+}

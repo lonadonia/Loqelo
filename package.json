@@ -1,0 +1,43 @@
+{
+  "name": "loqelo-prelaunch",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Loqelo pre-launch website: concept, promo video, platform preview and waitlist for customers and service providers.",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "check:i18n": "vitest run tests/unit/i18n.test.ts",
+    "brevo:setup": "node scripts/brevo-setup.mjs"
+  },
+  "dependencies": {
+    "next": "16.4.3",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "server-only": "0.0.1"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.14.0",
+    "@playwright/test": "1.63.0",
+    "@tailwindcss/postcss": "4.3.3",
+    "@types/node": "22.20.5",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "eslint": "9.39.5",
+    "eslint-config-next": "16.4.3",
+    "sharp": "0.35.5",
+    "tailwindcss": "4.3.3",
+    "typescript": "5.9.3",
+    "vitest": "5.0.5"
+  },
+  "overrides": {
+    "playwright-core": "1.63.0"
+  }
+}

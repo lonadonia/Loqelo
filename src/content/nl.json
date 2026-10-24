@@ -1,0 +1,333 @@
+{
+  "meta": {
+    "title": "Loqelo — Everything your place needs. Lancering in februari 2027",
+    "description": "Loqelo verbindt je met lokale dienstverleners voor je huis, tuin en kantoor. Beschrijf wat je nodig hebt, ontvang offertes en kies zelf. Schrijf je in voor de wachtlijst vóór de lancering in februari 2027.",
+    "ogAlt": "Loqelo — Everything your place needs. Lancering in februari 2027.",
+    "privacyTitle": "Privacybeleid — Loqelo",
+    "privacyDescription": "Hoe Loqelo met je gegevens omgaat als je je inschrijft voor de wachtlijst of loqelo.com bezoekt."
+  },
+  "nav": {
+    "skip": "Naar de inhoud",
+    "home": "Loqelo homepage",
+    "main": "Hoofdmenu",
+    "howItWorks": "Hoe het werkt",
+    "preview": "Preview",
+    "providers": "Voor vakmensen",
+    "launch": "Lancering",
+    "join": "Naar de wachtlijst",
+    "joinShort": "Inschrijven",
+    "language": "Taal",
+    "chooseLanguage": "Kies een taal",
+    "menu": "Menu openen",
+    "close": "Menu sluiten"
+  },
+  "langSuggest": {
+    "text": "Deze pagina is ook beschikbaar in het Nederlands.",
+    "switch": "Naar het Nederlands",
+    "dismiss": "Sluiten"
+  },
+  "hero": {
+    "badge": "Lancering in februari 2027",
+    "tagline": "Everything your place needs.",
+    "taglineTranslation": "Alles wat jouw plek nodig heeft.",
+    "lead": "Loqelo is een nieuw platform dat je verbindt met lokale dienstverleners voor je huis, tuin en kantoor. Beschrijf in je eigen woorden wat je nodig hebt, ontvang offertes en kies wie het werk doet.",
+    "ctaCustomer": "Ik zoek een dienst",
+    "ctaCustomerHint": "Inschrijven als klant",
+    "ctaProvider": "Ik bied diensten aan",
+    "ctaProviderHint": "Inschrijven als vakman",
+    "note": "Gratis · Alleen lanceringsnieuws · Altijd afmelden",
+    "demo": {
+      "label": "Wat heb je nodig?",
+      "anyLanguage": "In elke taal",
+      "found": "{count} diensten herkend",
+      "recognising": "Diensten herkennen…",
+      "cta": "Offertes ontvangen",
+      "preview": "Platformpreview",
+      "pause": "Demo pauzeren",
+      "play": "Demo afspelen",
+      "places": ["Huis", "Tuin", "Kantoor"],
+      "scenarios": [
+        {
+          "segments": [
+            { "text": "Ik wil " },
+            { "text": "mijn huis laten schoonmaken", "service": "Schoonmaak", "tone": "mint" },
+            { "text": " en " },
+            { "text": "de ramen laten wassen", "service": "Glazenwassen", "tone": "blue" },
+            { "text": "." }
+          ]
+        },
+        {
+          "segments": [
+            { "text": "Kan iemand deze week " },
+            { "text": "de heg snoeien", "service": "Heg snoeien", "tone": "mint" },
+            { "text": " en " },
+            { "text": "het gras maaien", "service": "Gazononderhoud", "tone": "amber" },
+            { "text": "?" }
+          ]
+        },
+        {
+          "segments": [
+            { "text": "Ons kantoor heeft " },
+            { "text": "nieuwe plafondlampen", "service": "Elektra", "tone": "blue" },
+            { "text": " en een " },
+            { "text": "grondige schoonmaak", "service": "Kantoorschoonmaak", "tone": "mint" },
+            { "text": " nodig." }
+          ]
+        }
+      ]
+    }
+  },
+  "intro": {
+    "eyebrow": "Wat is Loqelo",
+    "title": "Eén plek voor al het werk dat jouw plek nodig heeft.",
+    "body": "Van een lekkende kraan tot een nieuwe tuin: Loqelo brengt mensen die iets gedaan willen hebben samen met de lokale vakmensen die het doen. Eén eenvoudige aanvraag in plaats van eindeloos zoeken, bellen en vergelijken.",
+    "places": [
+      { "key": "home", "title": "Huis", "text": "Schoonmaak, reparaties, installaties, renovatie en verhuizingen." },
+      { "key": "garden", "title": "Tuin", "text": "Gazon, heggen en bomen, beregening en onderhoud buiten." },
+      { "key": "office", "title": "Kantoor", "text": "Kantoorschoonmaak, onderhoud, elektra en inrichting." }
+    ],
+    "moreLabel": "Geplande categorieën zijn onder meer",
+    "categories": ["Huis", "Tuin", "Bouw", "Installaties", "Huisdieren", "Voertuigen", "Persoonlijke diensten", "Verhuizing & transport"]
+  },
+  "audiences": {
+    "customers": {
+      "eyebrow": "Voor klanten",
+      "title": "Hulp nodig? Beschrijf het één keer.",
+      "text": "Vertel Loqelo in je eigen woorden wat je nodig hebt. Lokale dienstverleners sturen je offertes en jij kiest wat het beste past.",
+      "points": [
+        "Beschrijf de klus in één zin — met foto’s als dat helpt",
+        "Vergelijk offertes op prijs, planning en beoordeling",
+        "Je contactgegevens blijven privé tot je een keuze maakt"
+      ],
+      "cta": "Inschrijven als klant",
+      "imageAlt": "Een vrouw plant thuis een klus op haar laptop"
+    },
+    "providers": {
+      "eyebrow": "Voor dienstverleners",
+      "title": "Meer klussen? Laat ze naar jou komen.",
+      "text": "Ontvang aanvragen die passen bij je diensten en je werkgebied, en stuur in ongeveer een minuut een heldere offerte.",
+      "points": [
+        "Klussen die passen bij je diensten en je straal",
+        "Bekijk details, foto’s en de globale locatie voordat je een offerte doet",
+        "Beantwoord vragen van klanten op één plek"
+      ],
+      "cta": "Inschrijven als vakman",
+      "imageAlt": "Een monteur aan het werk aan een koelinstallatie"
+    }
+  },
+  "how": {
+    "eyebrow": "Hoe Loqelo werkt",
+    "title": "Van één zin naar de juiste vakman.",
+    "lead": "Vier eenvoudige stappen, van je vraag beschrijven tot kiezen wie het werk doet.",
+    "steps": [
+      {
+        "title": "Beschrijf wat je nodig hebt",
+        "text": "Schrijf het in je eigen woorden of spreek het in. Voeg foto’s of een video toe als dat helpt — Loqelo herkent de diensten die erbij horen.",
+        "alt": "Loqelo-scherm ‘Klus plaatsen’ met een omschrijving en herkende diensten"
+      },
+      {
+        "title": "Word gekoppeld",
+        "text": "Loqelo bepaalt wat de klus vraagt en laat relevante dienstverleners in jouw buurt het weten.",
+        "alt": "Loqelo-scherm voor vakmensen met passende klussen op een kaart binnen een straal"
+      },
+      {
+        "title": "Ontvang offertes",
+        "text": "Dienstverleners sturen offertes met prijs en planning. Vragen worden openbaar beantwoord, dus je antwoordt maar één keer.",
+        "alt": "Loqelo-offertescherm met vijf offertes en een prijsspreiding"
+      },
+      {
+        "title": "Kies je vakman",
+        "text": "Vergelijk prijs, planning en beoordelingen naast elkaar en kies de dienstverlener die het beste bij je past.",
+        "alt": "Mobiel Loqelo-scherm met een lijst offertes en een Kiezen-knop"
+      }
+    ],
+    "stepLabel": "Stap {n}",
+    "note": "Ontwerppreview van het komende platform · voorbeeldgegevens"
+  },
+  "video": {
+    "eyebrow": "Bekijk",
+    "title": "Zie Loqelo in actie.",
+    "text": "Een korte film over hoe Loqelo mensen verbindt met de juiste lokale vakmensen — voor huis, tuin en kantoor.",
+    "play": "Speel de Loqelo-video af",
+    "duration": "1:22",
+    "label": "Promotievideo van Loqelo"
+  },
+  "preview": {
+    "eyebrow": "Platformpreview",
+    "title": "Een eerste blik op het platform.",
+    "lead": "Ontworpen voor beide kanten van de klus: eenvoudig voor klanten, efficiënt voor vakmensen. Dit zijn ontwerppreviews van het platform dat in februari 2027 lanceert.",
+    "tabs": { "customers": "Voor klanten", "providers": "Voor vakmensen", "mobile": "Mobiel" },
+    "tabsLabel": "Kies een preview",
+    "sample": "Ontwerppreview · voorbeeldgegevens",
+    "enlarge": "Scherm vergroten",
+    "close": "Sluiten",
+    "previous": "Vorig scherm",
+    "next": "Volgend scherm",
+    "items": {
+      "home": { "title": "Beschrijf het", "text": "Schrijf in je eigen woorden wat je nodig hebt; Loqelo vindt de passende diensten.", "alt": "Loqelo-homescherm met het invoerveld ‘What do you need? Describe it.’" },
+      "postJob": { "title": "Klus plaatsen", "text": "Plaats een klus in ongeveer twee minuten, met foto’s, locatie en een gewenste datum.", "alt": "Loqelo-formulier ‘Klus plaatsen’" },
+      "offers": { "title": "Offertes vergelijken", "text": "Alle offertes naast elkaar, met de prijsspreiding in één oogopslag.", "alt": "Loqelo-klusdetails met vijf offertes en een prijsspreiding" },
+      "clientPanel": { "title": "Je klussen", "text": "Volg al je klussen en de laatste activiteit op één plek.", "alt": "Loqelo-klantdashboard ‘Mijn klussen’" },
+      "providerJobs": { "title": "Klussen voor jou", "text": "Bekijk passende aanvragen op een kaart, binnen jouw straal.", "alt": "Loqelo-dashboard voor vakmensen ‘Klussen voor jou’ met kaart" },
+      "providerOffer": { "title": "Offerte sturen", "text": "Stuur een heldere offerte met prijs, planning en wat er inbegrepen is.", "alt": "Loqelo-kluspagina voor vakmensen met het offerteformulier" },
+      "mobileHome": { "title": "Onderweg beschrijven", "text": "Dezelfde eenvoudige aanvraag op je telefoon.", "alt": "Mobiel homescherm van Loqelo" },
+      "mobileOffers": { "title": "Kies met één tik", "text": "Vergelijk offertes en kies een vakman vanaf je telefoon.", "alt": "Mobiele offertelijst van Loqelo" },
+      "mobileMap": { "title": "Klussen in de buurt", "text": "Vakmensen zien klussen in de buurt op een kaart.", "alt": "Mobiele Loqelo-kaart met klussen voor vakmensen" }
+    }
+  },
+  "launch": {
+    "eyebrow": "Lancering",
+    "title": "Lancering in februari 2027.",
+    "text": "Loqelo maakt zich klaar voor de lancering in februari 2027. Schrijf je nu in voor de wachtlijst en we houden je op de hoogte — alleen met lanceringsnieuws en projectupdates.",
+    "month": "Februari",
+    "year": "2027",
+    "timeline": [
+      { "label": "Nu", "title": "Wachtlijst open", "text": "Schrijf je in als klant of als dienstverlener." },
+      { "label": "Voor de lancering", "title": "Projectupdates", "text": "Af en toe nieuws over het platform, de categorieën en waar Loqelo beschikbaar wordt." },
+      { "label": "Februari 2027", "title": "Lancering", "text": "Loqelo gaat open — en we laten het je per e-mail weten." }
+    ],
+    "cta": "Naar de wachtlijst"
+  },
+  "waitlist": {
+    "eyebrow": "Wachtlijst",
+    "title": "Doe mee vóór de lancering.",
+    "lead": "Kies hoe je Loqelo wilt gebruiken. Het duurt minder dan een minuut.",
+    "chooseLabel": "Ik schrijf me in als",
+    "customer": { "title": "Ik zoek diensten", "text": "Voor mijn huis, tuin of kantoor" },
+    "provider": { "title": "Ik bied diensten aan", "text": "Als vakman of dienstverlenend bedrijf" },
+    "fields": {
+      "email": "E-mailadres",
+      "emailPlaceholder": "naam@voorbeeld.nl",
+      "countryCustomer": "Land waar je woont",
+      "countryProvider": "Land waar je diensten aanbiedt",
+      "countryPlaceholder": "Kies een land",
+      "suggested": "Voorgesteld",
+      "allCountries": "Alle landen",
+      "typeLegend": "Ik schrijf me in als",
+      "optional": "optioneel",
+      "individual": "Particulier",
+      "business": "Bedrijf",
+      "clear": "Keuze wissen"
+    },
+    "consent": "Ik wil e-mails van Loqelo ontvangen over de lancering en projectupdates. Ik kan me altijd afmelden. Meer informatie in het {privacy}.",
+    "consentLink": "privacybeleid",
+    "submitCustomer": "Op de klantenwachtlijst",
+    "submitProvider": "Op de wachtlijst voor vakmensen",
+    "submitting": "Bezig met inschrijven…",
+    "privacyNote": "We gebruiken je e-mail alleen voor lanceringsnieuws en projectupdates. Nooit spam.",
+    "errors": {
+      "emailRequired": "Vul je e-mailadres in.",
+      "emailInvalid": "Vul een geldig e-mailadres in, bijvoorbeeld naam@voorbeeld.nl.",
+      "countryRequired": "Kies een land.",
+      "consentRequired": "Vink het vakje aan om lanceringsupdates te ontvangen.",
+      "summary": "Controleer de gemarkeerde velden.",
+      "server": "Er ging iets mis aan onze kant. Probeer het zo meteen opnieuw.",
+      "network": "We konden de server niet bereiken. Controleer je verbinding en probeer het opnieuw.",
+      "rateLimited": "Te veel pogingen. Wacht een paar minuten en probeer het opnieuw.",
+      "spam": "We konden je inzending niet verifiëren. Probeer het opnieuw.",
+      "unavailable": "Inschrijven is tijdelijk niet mogelijk. Probeer het later opnieuw."
+    },
+    "success": {
+      "customerTitle": "Je staat op de lijst!",
+      "customerText": "Bedankt voor je inschrijving. We mailen je met lanceringsnieuws terwijl Loqelo zich klaarmaakt voor februari 2027.",
+      "providerTitle": "Je staat op de lijst voor vakmensen!",
+      "providerText": "Bedankt voor je inschrijving. We mailen je over de lancering en over hoe je als dienstverlener van start gaat.",
+      "confirmTitle": "Bijna klaar — kijk in je inbox.",
+      "confirmText": "We hebben je een e-mail gestuurd. Klik op de link erin om je inschrijving te bevestigen.",
+      "again": "Nog een e-mailadres inschrijven"
+    }
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Vragen & antwoorden",
+    "items": [
+      { "q": "Wanneer gaat Loqelo live?", "a": "De lancering van Loqelo staat gepland voor februari 2027. Iedereen op de wachtlijst krijgt een e-mail zodra het platform opengaat." },
+      { "q": "Wat gebeurt er als ik me inschrijf?", "a": "Je ontvangt per e-mail aankondigingen over de lancering en af en toe een projectupdate. Er zijn geen verplichtingen en je kunt je altijd met één klik afmelden." },
+      { "q": "Is inschrijven gratis?", "a": "Ja. Inschrijven voor de wachtlijst is helemaal gratis." },
+      { "q": "Welke diensten gaat Loqelo aanbieden?", "a": "Diensten voor huis, tuin en kantoor — van schoonmaak en reparaties tot tuinonderhoud, installaties en verhuizingen. De volledige lijst met categorieën maken we vóór de lancering bekend." },
+      { "q": "In welke landen komt Loqelo beschikbaar?", "a": "We verzamelen interesse van klanten en dienstverleners uit veel landen. De lanceringslocaties maken we vóór de lancering bekend." },
+      { "q": "Ik ben dienstverlener. Kan ik me nu al inschrijven?", "a": "Ja. Kies in het formulier ‘Ik bied diensten aan’ en selecteer het land waar je werkt. Vóór de lancering sturen we je updates voor vakmensen." }
+    ]
+  },
+  "finalCta": {
+    "title": "Sta vooraan in de rij.",
+    "text": "Loqelo lanceert in februari 2027. Schrijf je in voor de wachtlijst en we laten je weten wanneer het platform opengaat.",
+    "customer": "Ik zoek een dienst",
+    "provider": "Ik bied diensten aan"
+  },
+  "footer": {
+    "about": "Een platform dat klanten verbindt met dienstverleners voor huis, tuin en kantoor. Lancering in februari 2027.",
+    "privacy": "Privacybeleid",
+    "cookies": "Cookie-instellingen",
+    "contact": "Contact",
+    "rights": "Alle rechten voorbehouden.",
+    "places": "Huis · Tuin · Kantoor",
+    "navLabel": "Footer",
+    "languages": "Talen"
+  },
+  "consent": {
+    "title": "Jouw privacy",
+    "text": "Met jouw toestemming gebruiken we Google Analytics om bezoeken te tellen en te zien uit welke landen onze bezoekers komen. Je e-mailadres en formulierantwoorden worden nooit gedeeld met analysetools.",
+    "accept": "Analytics accepteren",
+    "decline": "Weigeren",
+    "more": "Privacybeleid"
+  },
+  "notFound": {
+    "title": "Pagina niet gevonden",
+    "text": "De pagina die je zoekt bestaat niet.",
+    "back": "Terug naar de homepage"
+  },
+  "privacy": {
+    "title": "Privacybeleid",
+    "draft": "Concept ter beoordeling — de opdrachtgever moet deze tekst goedkeuren en de bedrijfsgegevens aanvullen vóór de livegang.",
+    "updated": "Laatst bijgewerkt: 24 oktober 2026",
+    "toConfirm": "nog aan te vullen",
+    "back": "Terug naar de homepage",
+    "sections": [
+      {
+        "heading": "Wie wij zijn",
+        "paragraphs": [
+          "Deze website wordt beheerd door Loqelo (‘wij’). De verwerkingsverantwoordelijke voor je gegevens is: {controller}.",
+          "Vragen over je gegevens: {email}."
+        ]
+      },
+      {
+        "heading": "Welke gegevens we verzamelen bij inschrijving",
+        "paragraphs": [
+          "Je e-mailadres; het gekozen land; of je je inschrijft als klant of als dienstverlener; of je particulier of bedrijf bent (alleen als je dat aangeeft); de taal van de pagina; en de datum, het tijdstip en de versie van de toestemmingstekst die je hebt geaccepteerd."
+        ]
+      },
+      {
+        "heading": "Waarvoor we ze gebruiken",
+        "paragraphs": [
+          "Om je de gevraagde aankondigingen over de lancering en projectupdates van Loqelo te sturen. De rechtsgrond is je toestemming (art. 6 lid 1 sub a AVG). We bekijken ook geaggregeerde cijfers — bijvoorbeeld inschrijvingen per land — om de lancering te plannen."
+        ]
+      },
+      {
+        "heading": "Dienstverleners die we inschakelen",
+        "paragraphs": [
+          "Contacten op de wachtlijst worden opgeslagen in Brevo (Sendinblue SAS, Frankrijk), onze aanbieder voor e-mail en contactbeheer. De website wordt gehost door Vercel Inc. Cloudflare Turnstile beschermt de formulieren tegen spam. Google Analytics 4 (Google Ireland Ltd.) wordt alleen gebruikt als je analytics accepteert. Elke aanbieder verwerkt gegevens namens ons op basis van een verwerkersovereenkomst."
+        ]
+      },
+      {
+        "heading": "Analytics en cookies",
+        "paragraphs": [
+          "Google Analytics wordt pas geladen nadat je het hebt geaccepteerd. Het gebruikt cookies om bezoeken te tellen en laat ons het globale land van bezoekers zien. Advertentiefuncties en Google Signals staan uit. We sturen je e-mailadres of formulierantwoorden nooit naar Google Analytics.",
+          "We slaan ook je taalkeuze en je keuze over analytics op in je browser, zodat de site werkt zoals je verwacht. Je kunt je keuze over analytics altijd wijzigen via ‘Cookie-instellingen’ onderaan elke pagina."
+        ]
+      },
+      {
+        "heading": "Hoe lang we gegevens bewaren",
+        "paragraphs": [
+          "Tot je je afmeldt of vraagt om verwijdering, of tot de wachtlijst na de lancering niet meer nodig is — wat het eerst gebeurt."
+        ]
+      },
+      {
+        "heading": "Jouw rechten",
+        "paragraphs": [
+          "Je kunt je gegevens inzien, laten corrigeren, overdragen of verwijderen, en je toestemming op elk moment intrekken — elke e-mail bevat een afmeldlink. Je hebt ook het recht om een klacht in te dienen bij je toezichthouder (in Nederland: de Autoriteit Persoonsgegevens)."
+        ]
+      }
+    ]
+  }
+}

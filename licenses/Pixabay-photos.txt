@@ -1,0 +1,17 @@
+Photos used in the Loqelo UI design
+All from Pixabay, under the Pixabay Content License (free for commercial use, no attribution required): https://pixabay.com/service/license-summary/
+
+windows.jpg      https://pixabay.com/photos/woman-window-cleaning-person-5928694/
+house.jpg        https://pixabay.com/photos/residence-property-house-2219972/
+living.jpg       https://pixabay.com/photos/living-room-interior-design-1835923/
+car.jpg          https://pixabay.com/photos/hyundai-kona-electro-electric-car-4964667/
+lawn.jpg         https://pixabay.com/photos/lawn-mower-gardening-mow-cut-grass-2293876/
+garden.jpg       https://pixabay.com/photos/box-hedge-topiary-shears-gardener-869073/
+hedge.jpg        https://pixabay.com/photos/hedge-clipped-trimmed-hedge-design-2903846/
+hedge2.jpg       https://pixabay.com/photos/sunbed-garden-lawn-hedge-table-3394611/
+trees.jpg        https://pixabay.com/photos/park-hedge-garden-trees-trimmed-423125/
+irrigation.jpg   https://pixabay.com/photos/garden-boxwood-geometric-hedge-4783579/
+tap.jpg          https://pixabay.com/photos/faucet-sink-bathroom-metal-8372443/
+boxes.jpg        https://pixabay.com/photos/moving-apartment-packing-8252172/
+cust.jpg         https://pixabay.com/photos/bed-woman-work-laptop-computer-1979270/
+pro.jpg          https://pixabay.com/photos/refrigeration-overheated-supermarket-7363620/
